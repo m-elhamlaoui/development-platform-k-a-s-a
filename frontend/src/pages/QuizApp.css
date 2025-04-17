@@ -1,0 +1,110 @@
+
+.QuizApp {
+  font-size: 18px;
+  font-family: poppins;
+  text-align: center;
+}
+
+
+
+
+.question {
+  margin: 180px auto ;
+  padding: 15px 25px;
+  width: 60%;
+  border: 4px #ddd;
+  border-style: outset;
+  padding: 15px 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+.question h2 {
+  margin-bottom: 10px;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+
+.options > li > button {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* border: 1px solid grey; */
+}
+
+button:hover {
+  background-color: green;
+  color: white;
+}
+
+.results {
+  font-size: 18px;
+  margin: 180px auto ;
+  padding: 15px 0;
+  width: 60%;
+  border: 4px #ddd;
+  border-style: outset;
+  padding: 15px 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.results ul {
+  text-align: left;
+  margin: 30px auto ;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  list-style-type: circle;
+}
+
+.results span {
+  color: red;
+  font-weight: 800;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+.results li {
+  margin-bottom: 10px;
+}
+
+.results li[data-correct="true"] {
+  color: green;
+}
+
+.results li[data-correct="false"] {
+  color: red;
+}
+
+
+button:disabled {
+  background-color: #eddddd;
+  cursor: not-allowed;
+}
+
+button.submit {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/* Applique ce style uniquement si le bouton n'est pas sélectionné */
+.options button:hover:not(.selected) {
+  background-color: green;
+  color: rgb(0, 0, 0);
+}
