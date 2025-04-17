@@ -6,13 +6,11 @@ import './HeroSection.css';
 function HeroSection() {
   return (
     <div className="hero-container">
-      <video
-        src="/videos/video1.mp4"
-        autoPlay
-        loop
-        muted
-        className="background-video"
-      />
+       <video className="video-background" autoPlay loop muted>
+    <source src="/videos/video1.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
 
       <h2 className='gradient-text'>Explore</h2>
 

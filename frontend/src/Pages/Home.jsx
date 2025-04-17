@@ -1,22 +1,25 @@
 import React from 'react';
-import '../App.css';
-import HeroSection from '../Components/HeroSection';
 import Footer from '../Components/Footer/Footer';
+import Header from '../Components/Header/Header';
+import HeroSection from '../Components/HeroSection';
+import './Home.css';
+import CardsGrid from '../Components/CardsPrediction/CardsGrid'
 
 function Home() {
   return (
     <div className="home">
-      {/* Vidéo en fond */}
-      <video className="hero-background" autoPlay loop muted>
-        <source src="/path/to/your/video.mp4" type="video/mp4" />
-        Votre navigateur ne supporte pas la vidéo.
-      </video>
+      
+
+      
+      
+        <Header/>
+      
 
       {/* Section Hero */}
       <div className="hero-section">
         <HeroSection />
       </div>
-
+       <CardsGrid />
       {/* Footer */}
       <div className="footer">
         <Footer />
