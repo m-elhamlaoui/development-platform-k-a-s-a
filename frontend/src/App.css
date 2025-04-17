@@ -1,42 +1,98 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+/* Apply Syncopate font to all buttons */
+button {
+  font-family: 'Syncopate', sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h4{
+  color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+
+.white-text {
+  color: white; /* Set the color to white */
 }
 
-.card {
-  padding: 2em;
+.gradient-text {
+  font-family: 'Syncopate', sans-serif; /* Make sure the font is Syncopate */
+  font-weight: bold;
+  font-size: 7rem;
+  background: linear-gradient(to bottom, rgb(4, 48, 83), white); /* Gradient from lavender to white */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent; /* Make the text color transparent so the background shows */
 }
 
-.read-the-docs {
-  color: #888;
+.gradient-text2 {
+  font-family: 'Syncopate', sans-serif; /* Make sure the font is Syncopate */
+  font-weight: bold;
+  font-size: 3rem;
+  background: linear-gradient(to bottom, rgb(4, 48, 83), white); /* Gradient from lavender to white */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent; /* Make the text color transparent so the background shows */
 }
+
+html, body, #root {
+  height: 100%;  /* La hauteur de toute la page */
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;  /* Disposition des sections en colonne */
+  overflow: hidden;  /* Empêche le scroll global de la page */
+}
+
+.home {
+  display: flex;
+  flex-direction: column;  /* Empile les sections en colonne */
+  min-height: 100vh;  /* Chaque section prend toute la hauteur de l'écran */
+  overflow-y: auto;  /* Permet le scroll vertical */
+  scroll-snap-type: y mandatory;  /* Permet un défilement fluide entre les sections */
+}
+
+
+.footer {
+  width: 100%;  /* Chaque section prend toute la hauteur de l'écran */
+  scroll-snap-align: start;  /* Aligne chaque section au début lors du défilement */
+}
+
+
+.hero-section {
+  width: 100%;  /* La largeur de chaque section est 100% */
+  height: 100vh;  /* Chaque section prend toute la hauteur de l'écran */
+  scroll-snap-align: start;  /* Aligne chaque section au début lors du défilement */
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;  /* La vidéo reste derrière tout le contenu */
+  object-fit: cover;  /* Couvre toute la fenêtre sans distorsion */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

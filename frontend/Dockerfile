@@ -11,6 +11,9 @@ COPY package-lock.json .
 
 RUN npm install
 
+RUN npm install --save-dev @types/react @types/react-dom @types/three
+
+
 COPY . .
 
 # Exposer le port utilisé par Vite

@@ -1,0 +1,84 @@
+/* Video background */
+video {
+  object-fit: cover; /* Ensures the video covers the entire container */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1; /* Keeps the video behind other content */
+}
+
+/* Hero container section */
+.hero-container {
+  /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero heading */
+.hero-container > h1 {
+  color: #fff;
+  font-size: 6rem; /* Use rem units for better scalability */
+  margin-top: -100px;
+  text-align: center; /* Centering text for better alignment */
+}
+
+/* Hero paragraph */
+.hero-container > p {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 2rem; /* Use rem units for better scalability */
+  text-align: center; /* Center paragraph text */
+}
+
+/* Hero buttons container */
+.hero-btns {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center; /* Centering buttons */
+  gap: 12px; /* Add space between buttons */
+}
+
+/* Button styling */
+.hero-btns .btn {
+  margin: 6px;
+}
+
+/* Icon next to button */
+.fa-play-circle {
+  margin-left: 4px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+  .hero-container > h1 {
+      font-size: 4rem; /* Smaller font-size for better readability on smaller screens */
+      margin-top: -150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container > h1 {
+      font-size: 3.5rem; /* Adjust font size for mobile */
+      margin-top: -100px;
+  }
+
+  .hero-container > p {
+      font-size: 1.8rem; /* Adjust font size for mobile */
+  }
+
+  /* Mobile button styles */
+  .btn-mobile {
+      display: block;
+      text-decoration: none;
+      width: 100%; /* Make buttons full width on mobile */
+  }
+
+  .btn {
+      width: 100%;
+  }
+}
