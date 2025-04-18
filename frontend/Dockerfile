@@ -13,6 +13,8 @@ RUN npm install
 
 RUN npm install --save-dev @types/react @types/react-dom @types/three
 
+RUN npm install @react-oauth/google@latest
+
 
 COPY . .
 
