@@ -3,7 +3,7 @@ import './Header.css';
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg fixed-top custom-navbar">
+    <nav className="navbar navbar_width navbar-expand-lg fixed-top custom-navbar">
       <div className="container-fluid d-flex align-items-center justify-content-between">
 
         {/* 🪐 Logo animé */}

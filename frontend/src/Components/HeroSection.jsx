@@ -6,23 +6,19 @@ import './HeroSection.css';
 function HeroSection() {
   return (
     <div className="hero-container">
-       <video className="video-background" autoPlay loop muted>
-    <source src="/videos/video1.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-
+      <video className="video-background" autoPlay loop muted>
+        <source src="/videos/video1.mp4" type="video/mp4" />
+        Votre navigateur ne supporte pas la balise vidéo.
+      </video>
 
       <h2 className='gradient-text'>Explore</h2>
-
       <h3 className='gradient-text2'>The magical space</h3>
-
-      <p style={{ fontSize: '1.3rem', fontWeight: 'bold', fontFamily:'Syncopate'}}>
-         Explore the secrets of space.
+      <p style={{ fontSize: '1.3rem', fontWeight: 'bold', fontFamily: 'Syncopate' }}>
+        Explore the secrets of space.
       </p>
-      <p style={{ fontSize: '1.3rem', fontWeight: 'bold', fontFamily:'Syncopate'}}>
+      <p style={{ fontSize: '1.3rem', fontWeight: 'bold', fontFamily: 'Syncopate' }}>
         ASTROMAP helps you to check space galactics.
       </p>
-
 
       <div className="hero-btns">
         <Button buttonStyle="btn--outline" buttonSize="btn--large"> 

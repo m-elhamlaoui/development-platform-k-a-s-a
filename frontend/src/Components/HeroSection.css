@@ -1,94 +1,49 @@
-/* Video background */
-video {
-  object-fit: cover; /* Ensures the video covers the entire container */
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: -1; /* Keeps the video behind other content */
-}
-
-/* Hero container section */
 .hero-container {
-  /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
+  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-}
-
-/* Hero heading */
-.hero-container > h1 {
-  color: #fff;
-  font-size: 6rem; /* Use rem units for better scalability */
-  margin-top: -100px;
-  text-align: center; /* Centering text for better alignment */
-}
-
-/* Hero paragraph */
-.hero-container > p {
-  margin-top: 8px;
-  color: #fff;
-  font-size: 2rem; /* Use rem units for better scalability */
-  text-align: center; /* Center paragraph text */
-}
-
-/* Hero buttons container */
-.hero-btns {
-  margin-top: 32px;
-  display: flex;
-  justify-content: center; /* Centering buttons */
-  gap: 12px; /* Add space between buttons */
-}
-
-/* Button styling */
-.hero-btns .btn {
-  margin: 6px;
-}
-
-/* Icon next to button */
-.fa-play-circle {
-  margin-left: 4px;
-}
-
-/* Media Queries */
-@media screen and (max-width: 960px) {
-  .hero-container > h1 {
-      font-size: 4rem; /* Smaller font-size for better readability on smaller screens */
-      margin-top: -150px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .hero-container > h1 {
-      font-size: 3.5rem; /* Adjust font size for mobile */
-      margin-top: -100px;
-  }
-
-  .hero-container > p {
-      font-size: 1.8rem; /* Adjust font size for mobile */
-  }
-
-  /* Mobile button styles */
-  .btn-mobile {
-      display: block;
-      text-decoration: none;
-      width: 100%; /* Make buttons full width on mobile */
-  }
-
-  .btn {
-      width: 100%;
-  }
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); /* Ajustez la transparence si nécessaire */
+  overflow: hidden; /* Empêche le débordement */
 }
 
 .video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1; /* 👈 Assure que la vidéo est derrière le contenu */
+  position: absolute; /* Permet à la vidéo de s'étendre sur tout l'écran */
+  top: 50%;
+  left: 50%;
+  min-width: 100%; /* S'assure que la largeur minimale est de 100% */
+  min-height: 100%; /* S'assure que la hauteur minimale est de 100% */
+  width: auto;
+  height: auto;
+  z-index: -1; /* Met la vidéo derrière le contenu */
+  transform: translate(-50%, -50%); /* Centre la vidéo */
 }
+
+.hero-container > h1, .hero-container > h2, .hero-container > h3, .hero-container > p {
+  position: relative; /* Pour s'assurer que le texte est au-dessus de la vidéo */
+  z-index: 1; /* Assure que le contenu est au-dessus de la vidéo */
+  text-align: center;
+}
+
+
+.gradient-text {
+  font-family: 'Syncopate', sans-serif; /* Make sure the font is Syncopate */
+  font-weight: bold;
+  font-size: 7rem;
+  background: linear-gradient(to bottom, rgb(4, 48, 83), white); /* Gradient from lavender to white */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent; /* Make the text color transparent so the background shows */
+}
+
+.gradient-text2 {
+  font-family: 'Syncopate', sans-serif; /* Make sure the font is Syncopate */
+  font-weight: bold;
+  font-size: 3rem;
+  background: linear-gradient(to bottom, rgb(4, 48, 83), white); /* Gradient from lavender to white */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent; /* Make the text color transparent so the background shows */
+}
+
