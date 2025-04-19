@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+canvas {
+    height: 500px !important;
+}
+
+html, body, #root {
+    height: 100%;  /* La hauteur de toute la page */
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;  /* Disposition des sections en colonne */
+    overflow: hidden;  /* Empêche le scroll global de la page */
+  }
+
+
+
+.solarsystem {
+    display: flex;
+    flex-direction: column;  /* Empile les sections en colonne */
+    min-height: 100vh;  /* Chaque section prend toute la hauteur de l'écran */
+    overflow-y: auto; /* Permet à la section de modèle de prendre l'espace restant */
+}
+
+.header {
+    width: 100%;  /* Aligne chaque section au début lors du défilement */
+}
+
+.model {
+    width: 100%;  /* La largeur de chaque section est 100% */
+    height: 100%;  /* La hauteur prend tout l'espace restant */
+}
+
+.footer {
+    width: 100%;
+}

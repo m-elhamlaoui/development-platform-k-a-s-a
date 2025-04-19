@@ -10,9 +10,9 @@ function Home() {
     <div className="home">
       
 
-      
-      
-        <Header/>
+      <div className="header">
+        <Header />
+      </div>
       
 
       {/* Section Hero */}

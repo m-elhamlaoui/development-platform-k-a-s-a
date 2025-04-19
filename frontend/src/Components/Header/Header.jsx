@@ -3,13 +3,13 @@ import './Header.css';
 
 const Header = () => {
   return (
-    <nav className="navbar navbar_width navbar-expand-lg fixed-top custom-navbar">
+    <nav className="navbar navbar-expand-lg custom-navbar ">
       <div className="container-fluid d-flex align-items-center justify-content-between">
 
         {/* 🪐 Logo animé */}
         <a className="navbar-brand" href="#">AstroMap</a>
 
-        {/* 🍔 Burger menu (mobile) */}
+        {/* 🍔 Menu Burger */}
         <button
           className="navbar-toggler"
           type="button"
@@ -21,7 +21,7 @@ const Header = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* 📱 Offcanvas menu mobile */}
+        {/* 📱 Offcanvas */}
         <div
           className="offcanvas offcanvas-end"
           tabIndex="-1"
@@ -40,7 +40,7 @@ const Header = () => {
 
           <div className="offcanvas-body d-flex flex-column flex-lg-row align-items-center w-100 justify-content-between">
 
-            {/* 📌 Liens de navigation centrés */}
+            {/* 🌐 Liens centrés */}
             <ul className="navbar-nav flex-row gap-5 mb-3 mb-lg-0 justify-content-center flex-grow-1">
               <li className="nav-item">
                 <a className="nav-link" href="#">Prediction</a>
@@ -53,8 +53,8 @@ const Header = () => {
               </li>
             </ul>
 
-            {/* 🔐 Boutons auth déplacés à gauche */}
-            <div className="auth-buttons ">
+            {/* 🔐 Auth */}
+            <div className="auth-buttons">
               <a href="#" className="btn-custom">Sign up</a>
               <a href="#" className="login-link">
                 Log in <i className="fa-solid fa-arrow-right-to-bracket ms-1"></i>
@@ -68,4 +68,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Header;

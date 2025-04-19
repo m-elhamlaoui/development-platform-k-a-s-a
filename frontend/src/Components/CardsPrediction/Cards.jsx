@@ -14,9 +14,10 @@ const Cards = ({ cardName, link, imageUrl }) => {
         width: '100%',
         marginTop: '150px',
         marginBottom: '10px',
-        marginLeft: '30px',
+        margin: '20px',
         borderRadius: '6px',
         maxWidth: '230px',
+ 
       }}
     >
       <div className="card-container">
@@ -49,6 +50,7 @@ const Cards = ({ cardName, link, imageUrl }) => {
           marginTop: '20px',
           fontWeight: 'bold',
           marginBottom: '20px',
+          color:'black',
         }}
       >
         {cardName}
@@ -57,4 +59,4 @@ const Cards = ({ cardName, link, imageUrl }) => {
   );
 };
 
-export default Cards;
+export default Cards;
