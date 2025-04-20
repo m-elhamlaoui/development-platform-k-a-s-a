@@ -2,7 +2,7 @@
 .navbar-brand {
   font-size: 28px;
   font-weight: 900;
-  background: linear-gradient(270deg, #b085e9, #7f9ded, #1e2f97, #9c27b0);
+  background: linear-gradient(270deg, #b085e9, #7f9ded,  #9c27b0);
   background-color: transparent !important;
   box-shadow: none;
   -webkit-background-clip: text;
@@ -37,6 +37,7 @@
   font-size: 18px;
   color: white;
   transition: color 0.3s ease;
+  cursor: pointer; /* ✅ Ajout ici */
 }
 
 .navbar-nav .nav-link:hover {
@@ -67,6 +68,7 @@
   font-size: 16px;
   color: white;
   text-decoration: none;
+
 }
 
 .login-link:hover {

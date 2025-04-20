@@ -55,6 +55,5 @@ html, body, #root {
 
 
 .footer {
-    width: 100%;
-    padding: 20px 0;  /* Un peu de padding pour le bas de la page */
+    width: 100%;/* Un peu de padding pour le bas de la page */
 }

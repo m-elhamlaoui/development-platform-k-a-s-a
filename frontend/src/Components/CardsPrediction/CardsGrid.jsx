@@ -1,28 +1,29 @@
 import React, { useState } from 'react';
-import Cards from './Cards'; // ✅ chemin relatif au dossier components
+import Cards from './Cards';
+import './Cards.css';
 
 const CardsGrid = () => {
   const [showAll, setShowAll] = useState(false);
 
   const cards = [
     {
-      cardName: 'total solar eclipes',
-      imageUrl: 'https://www.publicdomainpictures.net/pictures/180000/velka/weltraum-1465833065YL1.jpg', // raccourci ici pour lisibilité
-    },
-    {
-      cardName: 'prediction',
+      cardName: 'Total Solar Eclipse',
       imageUrl: 'https://www.publicdomainpictures.net/pictures/180000/velka/weltraum-1465833065YL1.jpg',
     },
     {
-      cardName: 'prediction',
+      cardName: 'Prediction',
       imageUrl: 'https://www.publicdomainpictures.net/pictures/180000/velka/weltraum-1465833065YL1.jpg',
     },
     {
-      cardName: 'prediction',
+      cardName: 'Prediction',
       imageUrl: 'https://www.publicdomainpictures.net/pictures/180000/velka/weltraum-1465833065YL1.jpg',
     },
     {
-      cardName: 'prediction',
+      cardName: 'Prediction',
+      imageUrl: 'https://www.publicdomainpictures.net/pictures/180000/velka/weltraum-1465833065YL1.jpg',
+    },
+    {
+      cardName: 'Prediction',
       imageUrl: 'https://www.publicdomainpictures.net/pictures/180000/velka/weltraum-1465833065YL1.jpg',
     },
   ];
@@ -30,7 +31,7 @@ const CardsGrid = () => {
   const displayedCards = showAll ? cards : cards.slice(0, 3);
 
   return (
-    <div style={{ backgroundColor: 'white', width: '100%', padding: '60px 0' }}>
+    <div id="prediction" style={{ backgroundColor: 'white', width: '100%', padding: '60px 0'  }}>
       <div
         style={{
           display: 'flex',
@@ -56,18 +57,18 @@ const CardsGrid = () => {
           <div style={{ width: '100%', textAlign: 'center', marginTop: '30px' }}>
             <button
               onClick={() => setShowAll(true)}
+              className="btn-voir-plus"
               style={{
                 color: 'white',
                 padding: '10px 20px',
                 border: 'none',
                 borderRadius: '9px',
                 background: 'linear-gradient(135deg, #b085e9, #7f9ded)',
-                fontFamily: 'Montserrat', 
+                fontFamily: 'Montserrat',
                 transition: 'transform 0.3s ease, box-shadow 0.3s ease',
                 cursor: 'pointer',
                 fontSize: '16px',
-                textDecoration: 'none', // ✅ corrigé ici
-              
+                textDecoration: 'none',
               }}
             >
               Voir plus

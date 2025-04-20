@@ -13,10 +13,10 @@ function HeroSection() {
 
       <h2 className='gradient-text'>Explore</h2>
       <h3 className='gradient-text2'>The magical space</h3>
-      <p style={{ fontSize: '1.3rem', fontWeight: 'bold', fontFamily: 'Syncopate' }}>
+      <p style={{ fontSize: '1.3rem', color:'white', fontWeight: 'bold', fontFamily: 'Syncopate' }}>
         Explore the secrets of space.
       </p>
-      <p style={{ fontSize: '1.3rem', fontWeight: 'bold', fontFamily: 'Syncopate' }}>
+      <p style={{ fontSize: '1.3rem', color:'white', fontWeight: 'bold', fontFamily: 'Syncopate' }}>
         ASTROMAP helps you to check space galactics.
       </p>
 

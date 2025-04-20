@@ -7,8 +7,11 @@ import "./styles/auth.css";
 const LoginPage = () => {
   const [isLogin, setIsLogin] = useState(true);
 
+
+  
+
   return (
-    <div className="login-page"> {/* Utiliser la nouvelle classe ici */}
+    <div className="login-page" > {/* Utiliser la nouvelle classe ici */}
       <div className="login-container">
         <h2 className="form-title">{isLogin ? "Log in with" : "Sign up with"}</h2>
 

@@ -16,7 +16,8 @@ const Cards = ({ cardName, link, imageUrl }) => {
         marginBottom: '10px',
         margin: '20px',
         borderRadius: '6px',
-        maxWidth: '230px',
+        maxWidth: '280px', // ✅ plus large
+        height: '400px',    // ✅ nouvelle hauteur fixe
  
       }}
     >
@@ -46,10 +47,10 @@ const Cards = ({ cardName, link, imageUrl }) => {
 
       <div
         style={{
-          fontSize: '14px',
+          fontSize: '16px',
           marginTop: '20px',
           fontWeight: 'bold',
-          marginBottom: '20px',
+          marginBottom: '10px',
           color:'black',
         }}
       >
@@ -59,4 +60,4 @@ const Cards = ({ cardName, link, imageUrl }) => {
   );
 };
 
-export default Cards;
+export default Cards;
