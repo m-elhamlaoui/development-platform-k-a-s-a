@@ -19,7 +19,10 @@ function Home() {
       <div className="hero-section">
         <HeroSection />
       </div>
-       <CardsGrid />
+      <section id="cards">
+      <CardsGrid />
+      </section>
+       
       {/* Footer */}
       <div className="footer">
         <Footer />

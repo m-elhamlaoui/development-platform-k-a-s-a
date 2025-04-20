@@ -1,5 +1,9 @@
 import React from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+
+
 
 const Header = () => {
   return (
@@ -7,7 +11,7 @@ const Header = () => {
       <div className="container-fluid d-flex align-items-center justify-content-between">
 
         {/* 🪐 Logo animé */}
-        <a className="navbar-brand" href="#">AstroMap</a>
+        <Link className="navbar-brand" to="/">AstroMap</Link>
 
         {/* 🍔 Menu Burger */}
         <button
@@ -43,10 +47,11 @@ const Header = () => {
             {/* 🌐 Liens centrés */}
             <ul className="navbar-nav flex-row gap-5 mb-3 mb-lg-0 justify-content-center flex-grow-1">
               <li className="nav-item">
-                <a className="nav-link" href="#">Prediction</a>
+              <HashLink className="nav-link" smooth to="/#cards">Prediction</HashLink>
+              
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Cartography</a>
+                 <Link className="nav-link" to="/solarsystem">Cartography</Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Quiz</a>
