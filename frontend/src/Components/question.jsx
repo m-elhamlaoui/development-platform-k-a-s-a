@@ -20,7 +20,7 @@ const Question = ({question, onAnswerClick = () => {}}) => {
   };
   
   export default Question;
-  */
+  
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 
@@ -39,6 +39,7 @@ const Question = ({ question, onAnswerClick = () => {} }) => {
   };
 
   return (
+    
     <div className="question">
       <h2>{question.question}</h2>
       <ul className="options">
@@ -48,11 +49,15 @@ const Question = ({ question, onAnswerClick = () => {} }) => {
              onClick={() => handleOptionClick(option)}
              className={selectedOption?.text === option.text ? "selected" : ""}
              style={{
-                backgroundColor:
-                selectedOption?.text === option.text ? "#d3f9d8" : "white",
-                border:
-                selectedOption?.text === option.text ? "2px solid green" : "1px solid #ccc",
-                    }}
+              color: "white" ,
+              fontSize: "18px",
+              backdropFilter: "blur(2px)",  // Applique un flou à l'arrière-plan derrière l'élément
+              padding: "15px 20px",  // Espacement interne
+              borderRadius: "8px",  // Coins arrondis
+              backgroundColor: selectedOption?.text === option.text ? "#d3f9d8" : "rgba(0, 0, 0, 0)", // Utilisation d'un seul backgroundColor
+              border: selectedOption?.text === option.text ? "2px solid green" : "1px solid #ccc",  // Bordure conditionnelle
+            }}
+            
             >
              {option.text}
             </button>
@@ -65,6 +70,7 @@ const Question = ({ question, onAnswerClick = () => {} }) => {
         onClick={handleSubmit}
         disabled={!selectedOption}
         style={{
+          fontSize: "18px",
           backgroundColor: selectedOption ? "green" : "#ccc",
           color: "white",
           padding: "10px 25px",

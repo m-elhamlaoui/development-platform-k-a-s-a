@@ -1,0 +1,19 @@
+.App {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: poppins;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh; /* ✅ le changement important */
+
+    width: 100%;
+    align-items: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }

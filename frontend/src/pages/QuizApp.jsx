@@ -3,6 +3,8 @@ import "./QuizApp.css";
 import questions from "../constants/questions.json";
 import Question from "../Components/question";
 import Result from "../Components/result";
+import background from '../assets/space.png';
+
 
 function QuizApp() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -22,7 +24,7 @@ function QuizApp() {
 
   return (
     
-    <div className="QuizApp">
+    <div className="QuizApp " style={{ backgroundImage: `url(${background})` }}>
 
       {currentQuestion < questions.length && (
         <Question
