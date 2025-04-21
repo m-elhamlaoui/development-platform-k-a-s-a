@@ -31,9 +31,7 @@ function SolarSystemPage() {
                 </div>
 
 
-                <div className="footer">
-                    <Footer />
-                </div>
+                
             </div>
         </>
     );
