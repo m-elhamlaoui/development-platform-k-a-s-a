@@ -48,7 +48,6 @@ function Earth() {
                 </div>
             </div>
 
-            <Footer />
         </div>
     );
 }
