@@ -22,7 +22,7 @@ function Home() {
       <section id="cards">
       <CardsGrid />
       </section>
-       
+
       {/* Footer */}
       <div className="footer">
         <Footer />
