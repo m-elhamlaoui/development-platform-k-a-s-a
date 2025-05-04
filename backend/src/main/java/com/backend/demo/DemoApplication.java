@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import com.backend.demo.model.ScoreQuiz;
 import com.backend.demo.model.Utilisateur;
 import com.backend.demo.repository.ScoreQuizRepository;
-import com.backend.demo.repository.UserRepository;
+import com.backend.demo.repository.UtilisateurRepository;
 
 @SpringBootApplication
 public class DemoApplication {
@@ -18,7 +18,7 @@ public class DemoApplication {
     }
 
     @Bean
-    CommandLineRunner run(UserRepository userRepo, ScoreQuizRepository scoreRepo) {
+    CommandLineRunner run(UtilisateurRepository userRepo, ScoreQuizRepository scoreRepo) {
         return args -> {
             // ✅ Créer un utilisateur
             Utilisateur u = new Utilisateur("Asma", "asma@example.com", "password");
