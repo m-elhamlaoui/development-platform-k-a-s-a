@@ -1,4 +1,4 @@
-package com.backend.demo.model;
+package com.backend.demo.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,11 +19,11 @@ public class ScoreQuiz {
 
     @ManyToOne
     @JoinColumn(name = "utilisateur_id")
-    private Utilisateur utilisateur;
+    private User utilisateur;
 
     public ScoreQuiz() {}
 
-    public ScoreQuiz(String nomQuiz, int score, Utilisateur utilisateur) {
+    public ScoreQuiz(String nomQuiz, int score, User utilisateur) {
         this.nomQuiz = nomQuiz;
         this.score = score;
         this.utilisateur = utilisateur;
@@ -49,11 +49,11 @@ public class ScoreQuiz {
         this.score = score;
     }
 
-    public Utilisateur getUtilisateur() {
+    public User getUtilisateur() {
         return utilisateur;
     }
 
-    public void setUtilisateur(Utilisateur utilisateur) {
+    public void setUtilisateur(User utilisateur) {
         this.utilisateur = utilisateur;
     }
 }

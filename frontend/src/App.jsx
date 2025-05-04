@@ -14,6 +14,7 @@ import Saturn from './Pages/SidebarPages/Saturn';
 import Sun from './Pages/SidebarPages/Sun';
 import Uranus from './Pages/SidebarPages/Uranus';
 import Venus from './Pages/SidebarPages/Venus';
+import SignUpPage from './Pages/Auth/SignUpPage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<LoginPage />} />
+        <Route path='/signup' element={<SignUpPage />} />
         <Route path='/solarsystem' element={<SolarSystemPage />} />
         <Route path='/solarsystem/earth' element={<Earth />} />
         <Route path='/solarsystem/jupiter' element={<Jupiter />} />

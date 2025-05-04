@@ -1,4 +1,4 @@
-package com.backend.demo.model;
+package com.backend.demo.models;
 
 import java.util.List;
 
@@ -8,24 +8,31 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.Column;
+import jakarta.persistence.Table;
+
 
 @Entity
-public class Utilisateur {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String nom;
+
+    @Column(unique = true)
     private String email;
+
+    
     private String motDePasse;
 
     @OneToMany(mappedBy = "utilisateur", cascade = CascadeType.ALL)
     private List<ScoreQuiz> scores;
 
-    public Utilisateur() {}
+    public User() {}
 
-    public Utilisateur(String nom, String email, String motDePasse) {
+    public User(String nom, String email, String motDePasse) {
         this.nom = nom;
         this.email = email;
         this.motDePasse = motDePasse;
