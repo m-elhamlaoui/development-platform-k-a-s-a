@@ -35,7 +35,7 @@ const Footer = () => {
 
         {/* Colonne droite : Quick Links */}
         <div className="footer-section right-section">
-          <h3 className="footer-title">Quik links</h3>
+          <h3 className="footer-title">Quik link</h3>
           <ul>
             <li>Sign up</li>
             <li>Log in</li>
