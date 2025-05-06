@@ -54,7 +54,8 @@ const Header = () => {
                  <Link className="nav-link" to="/solarsystem">Cartography</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Quiz</a>
+                 <Link className="nav-link" to="/quiz">Quiz</Link>
+
               </li>
             </ul>
 
