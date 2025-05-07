@@ -1,0 +1,50 @@
+[
+    
+  
+    {
+      "question": "Quelle est la troisième planète à partir du Soleil ?",
+      "answerOptions": [
+        {"text": "Terre", "isCorrect": true},
+        {"text": "Mars", "isCorrect": false},
+        {"text": "Vénus", "isCorrect": false},
+        {"text": "Mercure", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Combien de lunes possède la Terre ?",
+      "answerOptions": [
+        {"text": "1", "isCorrect": true},
+        {"text": "2", "isCorrect": false},
+        {"text": "0", "isCorrect": false},
+        {"text": "4", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Quelle est la principale caractéristique qui rend la Terre unique ?",
+      "answerOptions": [
+        {"text": "Présence de la vie", "isCorrect": true},
+        {"text": "Couleur rouge", "isCorrect": false},
+        {"text": "Anneaux visibles", "isCorrect": false},
+        {"text": "Rotation rétrograde", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Quelle est la durée d'une rotation complète de la Terre ?",
+      "answerOptions": [
+        {"text": "24 heures", "isCorrect": true},
+        {"text": "12 heures", "isCorrect": false},
+        {"text": "365 jours", "isCorrect": false},
+        {"text": "1 mois", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Quel gaz est le plus présent dans l’atmosphère terrestre ?",
+      "answerOptions": [
+        {"text": "Azote", "isCorrect": true},
+        {"text": "Oxygène", "isCorrect": false},
+        {"text": "Hydrogène", "isCorrect": false},
+        {"text": "Dioxyde de carbone", "isCorrect": false}
+      ]
+    }
+  
+]

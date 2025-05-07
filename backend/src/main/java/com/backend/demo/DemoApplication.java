@@ -5,8 +5,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import com.backend.demo.model.ScoreQuiz;
-import com.backend.demo.model.Utilisateur;
 import com.backend.demo.repository.ScoreQuizRepository;
 import com.backend.demo.repository.UtilisateurRepository;
 
@@ -20,6 +18,7 @@ public class DemoApplication {
     @Bean
     CommandLineRunner run(UtilisateurRepository userRepo, ScoreQuizRepository scoreRepo) {
         return args -> {
+            /*
             // ✅ Créer un utilisateur
             Utilisateur u = new Utilisateur("Asma", "asma@example.com", "password");
             userRepo.save(u);
@@ -30,6 +29,7 @@ public class DemoApplication {
 
             // ✅ Affichage de vérification
             System.out.println("✔️ Utilisateur et score enregistrés avec succès !");
+             */
         };
     }
 }

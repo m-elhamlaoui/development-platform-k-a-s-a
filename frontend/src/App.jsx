@@ -13,8 +13,25 @@ function App() {
       <Routes>  
         <Route path="/login" element={<LoginPage />} />  
         <Route path="/" element={<Home />} /> 
-        <Route path="/quiz" element={<Quiztitles />} /> 
-        <Route path="/quizcontent" element={<QuizApp />} /> 
+        
+
+    
+        <Route   
+          path="/quiz"   
+          element={  
+            <PrivateRoute>  
+              <Quiztitles />  
+            </PrivateRoute>  
+          }   
+        />
+        <Route   
+          path="/quizcontent"   
+          element={  
+            <PrivateRoute>  
+              <QuizApp />  
+            </PrivateRoute>  
+          }   
+        />
 
         <Route   
           path="/solarsystem"   
