@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    display: block;  /* Évite les marges automatiques et assure une prise en charge complète */
+}
+
+html, body, #root {
+    height: 100%;  /* La hauteur de toute la page */
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;  /* Disposition des sections en colonne */
+    overflow: hidden;  /* Empêche le scroll global de la page */
+}
+
+.solarsystem {
+    background-image: url('../assets/img/stars2.jpg'); /* Mettre le bon chemin vers ton image */
+    background-size: cover; /* S'adapte à la taille de la fenêtre */
+    height: 100%;
+    background-position: center center; /* Centre l'image */
+    display: flex;
+    flex-direction: column;  /* Empile les sections en colonne */
+  /*   min-height: 100vh;  Chaque section prend toute la hauteur de l'écran */
+    overflow-y: auto; /* Permet à la section de modèle de prendre l'espace restant */
+}
+
+.header {
+    width: 100%;  /* Aligne chaque section au début lors du défilement */
+    padding: 20px 0;  /* Un peu de padding pour donner de l'espace */
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+
+.model {
+    flex: 1; /* Prend tout l'espace restant à droite du menu */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.footer {
+    width: 100%;/* Un peu de padding pour le bas de la page */
+}
