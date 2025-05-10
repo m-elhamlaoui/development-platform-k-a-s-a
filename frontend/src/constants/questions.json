@@ -1,0 +1,93 @@
+[
+    {
+      "question": "Quelle est la plus grande planète du système solaire ?",
+      "answerOptions": [
+        {"text": "Saturne", "isCorrect": false},
+        {"text": "Jupiter", "isCorrect": true},
+        {"text": "Neptune", "isCorrect": false},
+        {"text": "Terre", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Quelle planète est surnommée 'la planète rouge' ?",
+      "answerOptions": [
+        {"text": "Vénus", "isCorrect": false},
+        {"text": "Mars", "isCorrect": true},
+        {"text": "Mercure", "isCorrect": false},
+        {"text": "Jupiter", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Quelle est la planète la plus proche du Soleil ?",
+      "answerOptions": [
+        {"text": "Vénus", "isCorrect": false},
+        {"text": "Mars", "isCorrect": false},
+        {"text": "Mercure", "isCorrect": true},
+        {"text": "Terre", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Quelle planète possède des anneaux bien visibles ?",
+      "answerOptions": [
+        {"text": "Jupiter", "isCorrect": false},
+        {"text": "Uranus", "isCorrect": false},
+        {"text": "Saturne", "isCorrect": true},
+        {"text": "Neptune", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Quelle est la seule planète connue pour abriter la vie ?",
+      "answerOptions": [
+        {"text": "Mars", "isCorrect": false},
+        {"text": "Vénus", "isCorrect": false},
+        {"text": "Terre", "isCorrect": true},
+        {"text": "Jupiter", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Quelle est la plus petite planète du système solaire ?",
+      "answerOptions": [
+        {"text": "Mars", "isCorrect": false},
+        {"text": "Mercure", "isCorrect": true},
+        {"text": "Vénus", "isCorrect": false},
+        {"text": "Pluton (anciennement planète)", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Quelle planète tourne sur elle-même à l'envers (rotation rétrograde) ?",
+      "answerOptions": [
+        {"text": "Uranus", "isCorrect": false},
+        {"text": "Vénus", "isCorrect": true},
+        {"text": "Neptune", "isCorrect": false},
+        {"text": "Saturne", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Quelle est la planète la plus chaude du système solaire ?",
+      "answerOptions": [
+        {"text": "Mercure", "isCorrect": false},
+        {"text": "Vénus", "isCorrect": true},
+        {"text": "Mars", "isCorrect": false},
+        {"text": "Jupiter", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Quelle planète a le plus grand nombre de lunes (satellites naturels) ?",
+      "answerOptions": [
+        {"text": "Saturne", "isCorrect": true},
+        {"text": "Jupiter", "isCorrect": false},
+        {"text": "Uranus", "isCorrect": false},
+        {"text": "Neptune", "isCorrect": false}
+      ]
+    },
+
+    {
+      "question": "Quelle est la seule planète naine de la ceinture de Kuiper autrefois classée comme planète ?",
+      "answerOptions": [
+        {"text": "Cérès", "isCorrect": false},
+        {"text": "Éris", "isCorrect": false},
+        {"text": "Pluton", "isCorrect": true},
+        {"text": "Makémaké", "isCorrect": false}
+      ]
+    }
+  ]

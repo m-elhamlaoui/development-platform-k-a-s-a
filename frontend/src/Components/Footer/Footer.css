@@ -1,0 +1,114 @@
+.footer {
+  background-color: #1f2128;
+  padding: 50px 20px 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.footer-section {
+  width: 100%;
+  max-width: 480px;
+  margin-bottom: 30px;
+}
+
+.footer-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  color: #c3c8d1;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Logo */
+.footer-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* Email hover */
+.footer-text a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-text a:hover {
+  color: #9c27b0;
+}
+
+/* Social media */
+.footer-follow-title {
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.footer-social {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.footer-social img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+.footer-social img:hover {
+  transform: scale(1.1);
+}
+
+/* Ligne de séparation */
+.footer-line {
+  height: 2px;
+  margin: 30px auto;
+  width: 100%;
+  background: linear-gradient(to right, transparent, rgba(210, 216, 225, 0.51), transparent);
+}
+
+/* Bas du footer */
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #c3c8d1;
+}
+
+/* Liste des liens */
+.footer-section ul li {
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+.footer-section ul li:hover {
+  color: #9c27b0;
+}
+
+/* ✅ Marge spécifique pour Quik links */
+.right-section {
+  margin-top: 70px;
+}
+
+/* ✅ Responsive */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .right-section {
+    margin-top: 40px;
+}
+}

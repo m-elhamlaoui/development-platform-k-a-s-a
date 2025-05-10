@@ -1,0 +1,133 @@
+
+.QuizApp {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: poppins;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* plein écran */
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.header {
+  width: 100%;  /* Aligne chaque section au début lors du défilement */
+  padding: 20px 0;  /* Un peu de padding pour donner de l'espace */
+}
+
+
+.question {
+  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 18px;
+  margin: 180px auto ;
+  padding: 15px 25px;
+  width: 60%;
+  border: 4px #ddd;
+  border-style:outset;
+  border-radius: 1%;
+  padding: 15px 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+.question h2 {
+  margin-bottom: 10px;
+}
+
+.options {
+  color: white;
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  
+}
+
+.options > li > button {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* border: 1px solid grey; */
+}
+
+button:hover {
+  background-color: green;
+  color: #000000;
+}
+
+.results {
+  font-size: 18px;
+  margin: 180px auto ;
+  padding: 15px 0;
+  width: 60%;
+  border: 4px #ddd;
+  border-style: outset;
+  padding: 15px 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.results ul {
+  text-align: left;
+  margin: 30px auto ;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  list-style-type: circle;
+}
+
+.results span {
+  color: red;
+  font-weight: 800;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+.results li {
+  margin-bottom: 10px;
+}
+
+.results li[data-correct="true"] {
+  color: green;
+}
+
+.results li[data-correct="false"] {
+  color: red;
+}
+
+
+button:disabled {
+  background-color: #eddddd;
+  cursor: not-allowed;
+}
+
+button.submit {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/* Applique ce style uniquement si le bouton n'est pas sélectionné */
+.options button:hover:not(.selected) {
+  background-color: green;
+  color: rgb(255, 255, 255);
+}

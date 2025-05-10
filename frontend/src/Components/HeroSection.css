@@ -1,0 +1,49 @@
+.hero-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); /* Ajustez la transparence si nécessaire */
+  overflow: hidden; /* Empêche le débordement */
+}
+
+.video-background {
+  position: absolute; /* Permet à la vidéo de s'étendre sur tout l'écran */
+  top: 50%;
+  left: 50%;
+  min-width: 100%; /* S'assure que la largeur minimale est de 100% */
+  min-height: 100%; /* S'assure que la hauteur minimale est de 100% */
+  width: auto;
+  height: auto;
+  z-index: -1; /* Met la vidéo derrière le contenu */
+  transform: translate(-50%, -50%); /* Centre la vidéo */
+}
+
+.hero-container > h1, .hero-container > h2, .hero-container > h3, .hero-container > p {
+  position: relative; /* Pour s'assurer que le texte est au-dessus de la vidéo */
+  z-index: 1; /* Assure que le contenu est au-dessus de la vidéo */
+  text-align: center;
+}
+
+
+.gradient-text {
+  font-family: 'Syncopate', sans-serif; /* Make sure the font is Syncopate */
+  font-weight: bold;
+  font-size: 7rem;
+  background: linear-gradient(to bottom, rgb(4, 48, 83), white); /* Gradient from lavender to white */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent; /* Make the text color transparent so the background shows */
+}
+
+.gradient-text2 {
+  font-family: 'Syncopate', sans-serif; /* Make sure the font is Syncopate */
+  font-weight: bold;
+  font-size: 3rem;
+  background: linear-gradient(to bottom, rgb(4, 48, 83), white); /* Gradient from lavender to white */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent; /* Make the text color transparent so the background shows */
+}
+
