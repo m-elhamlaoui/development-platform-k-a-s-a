@@ -1,0 +1,86 @@
+/* 🌠 Logo animé */
+.navbar-brand {
+  font-size: 28px;
+  font-weight: 900;
+  background: linear-gradient(270deg, #b085e9, #7f9ded,  #9c27b0);
+  background-color: transparent !important;
+  box-shadow: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: galaxyAnimation 8s ease infinite;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 100px;
+  margin-right: 48px;
+}
+
+@keyframes galaxyAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🌌 Header transparent et fixe */
+.custom-navbar {
+  background-color: rgba(0, 0, 0, 0.1) !important; /* très transparent */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1050;
+  backdrop-filter: blur(6px); /* effet flou (optionnel mais beau) */
+}
+
+/* 🌐 Liens du menu */
+.navbar-nav .nav-link {
+  font-size: 18px;
+  color: white;
+  transition: color 0.3s ease;
+  cursor: pointer; /* ✅ Ajout ici */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #9c27b0;
+}
+
+/* 🎨 Bouton personnalisé */
+.btn-custom {
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 9px;
+  background: linear-gradient(135deg, #b085e9, #7f9ded);
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.btn-custom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(155, 180, 255, 0.5);
+}
+
+/* 🔐 Lien login */
+.login-link {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* 📦 Conteneur des boutons */
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 50px;
+  margin-left: 60px;
+}

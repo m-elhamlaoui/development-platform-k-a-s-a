@@ -1,0 +1,51 @@
+version: "3.8"
+
+services:
+  # Frontend
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:5173"
+    command: npm run dev -- --host
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    networks:
+      - app-network
+
+  # Backend
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/my_database
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: postgres
+    networks:
+      - app-network
+
+  # PostgreSQL
+  postgres:
+    image: postgres:15
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: my_database
+    networks:
+      - app-network
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
