@@ -1,10 +1,10 @@
-import React from "react";
-import "./Footer.css";
+import logo from "../../../public/logo.png";
 import fb from "../../assets/fbimg.png";
-import twitter from "../../assets/twitterimg.png";
-import linkedin from "../../assets/linkedinimg.png";
 import insta from "../../assets/instaimg.png";
-import logo from "../../assets/logo.png";
+import linkedin from "../../assets/linkedinimg.png";
+import twitter from "../../assets/twitterimg.png";
+import "./Footer.css";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -15,11 +15,11 @@ const Footer = () => {
           <img src={logo} alt="AstroMap Logo" className="footer-logo" />
 
           <p className="footer-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fugit magni accusantium sint temporibus nihil, in odio recusandae natus deserunt.
+           Explorez l'univers fascinant de l'espace avec AstroMap, une plateforme immersive qui vous permet de découvrir des prédictions astronomiques, d'explorer notre système solaire en 3D et de tester vos connaissances spatiales à travers des quiz interactifs. 
           </p>
           <p className="footer-text">
             <strong>Email:</strong>{" "}
-            <a href="mailto:gmail.com">gmail.com</a>
+            <a href="mailto:gmail.com">contact@astromap.com</a>
           </p>
 
           <div className="footer-follow">
@@ -37,11 +37,12 @@ const Footer = () => {
         <div className="footer-section right-section">
           <h3 className="footer-title">Quik link</h3>
           <ul>
-            <li>Sign up</li>
-            <li>Log in</li>
-            <li>Cartography</li>
-            <li>Quiz</li>
-          </ul>
+  <li><Link to="/signup">Sign up</Link></li>
+  <li><Link to="/login">Log in</Link></li>
+  <li><Link to="/solarsystem">Cartography</Link></li>
+  <li><Link to="/quizcontent">Quiz</Link></li>
+</ul>
+
         </div>
       </div>
 

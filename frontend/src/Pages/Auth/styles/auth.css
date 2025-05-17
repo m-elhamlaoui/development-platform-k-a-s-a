@@ -27,6 +27,11 @@ body {
   justify-content: center;
 }
 
+.signup-button:hover {
+   background: linear-gradient(135deg, #5e4db2, #7f9ded, #b085e9);
+
+}
+
 .login-container {
   margin: 0 auto;
   max-width: 410px;

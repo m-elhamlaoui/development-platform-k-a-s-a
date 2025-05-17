@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-import logo from "../../assets/logo.png";
+import logo from "../../../public/logo.png";
 import earth from "../../assets/planets_icon/earth.png";
 import jupiter from "../../assets/planets_icon/jupiter.png";
 import mars from "../../assets/planets_icon/mars.png";

@@ -39,6 +39,7 @@ const SignUpForm = () => {
  
       {error && <p className="error-message">{error}</p>}  
         
+     
       <InputField   
         type="text"   
         placeholder="Full Name"   

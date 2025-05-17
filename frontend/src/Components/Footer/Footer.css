@@ -84,18 +84,24 @@
   font-size: 14px;
   color: #c3c8d1;
 }
-
-/* Liste des liens */
+/* ✅ Cible les <li> pour l'espacement */
 .footer-section ul li {
   list-style: none;
   margin: 10px 0;
-  cursor: pointer;
+}
+
+/* ✅ Cible les <a> pour le style de lien */
+.footer-section ul li a {
   color: white;
+  text-decoration: none;
+  cursor: pointer;
   transition: color 0.3s ease;
 }
-.footer-section ul li:hover {
+
+.footer-section ul li a:hover {
   color: #9c27b0;
 }
+
 
 /* ✅ Marge spécifique pour Quik links */
 .right-section {

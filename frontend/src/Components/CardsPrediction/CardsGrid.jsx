@@ -6,27 +6,31 @@ const CardsGrid = () => {
   const [showAll, setShowAll] = useState(false);
 
   const cards = [
+  {
+    cardName: 'Éruption Solaire (Flare)',
+    imageUrl: 'https://wallpapercrafter.com/desktop/139690-space-flares-dark-sky-galaxy.jpg',
+    link: '/details/flares',
+    type: 'flares'
+  },
+  {
+    cardName: 'CME (Éjection de Masse Coronale)',
+    imageUrl: 'https://images.hdqwalls.com/download/galaxy-space-fantasy-science-fiction-ci-2560x1440.jpg',
+    link: '/details/cme',
+    type: 'cme'
+  },
+  {
+    cardName: 'Indice Kp',
+    imageUrl: 'https://th.bing.com/th/id/OIP.h4gz0zgBjERau9nqcvz2lgHaFK?cb=iwc2&rs=1&pid=ImgDetMain',
+    link: '/details/kp',
+    type: 'kp'
+  },
     {
-      cardName: 'Total Solar Eclipse',
-      imageUrl: 'https://www.publicdomainpictures.net/pictures/180000/velka/weltraum-1465833065YL1.jpg',
-    },
-    {
-      cardName: 'Prediction',
-      imageUrl: 'https://www.publicdomainpictures.net/pictures/180000/velka/weltraum-1465833065YL1.jpg',
-    },
-    {
-      cardName: 'Prediction',
-      imageUrl: 'https://www.publicdomainpictures.net/pictures/180000/velka/weltraum-1465833065YL1.jpg',
-    },
-    {
-      cardName: 'Prediction',
-      imageUrl: 'https://www.publicdomainpictures.net/pictures/180000/velka/weltraum-1465833065YL1.jpg',
-    },
-    {
-      cardName: 'Prediction',
-      imageUrl: 'https://www.publicdomainpictures.net/pictures/180000/velka/weltraum-1465833065YL1.jpg',
-    },
-  ];
+    cardName: 'Indice Kp',
+    imageUrl: 'https://th.bing.com/th/id/OIP.h4gz0zgBjERau9nqcvz2lgHaFK?cb=iwc2&rs=1&pid=ImgDetMain',
+    link: '/details/kp',
+    type: 'kp'
+  }
+]
 
   const displayedCards = showAll ? cards : cards.slice(0, 3);
 
@@ -53,7 +57,7 @@ const CardsGrid = () => {
           />
         ))}
 
-        {!showAll && cards.length > 4 && (
+        {!showAll && cards.length > 3 && (
           <div style={{ width: '100%', textAlign: 'center', marginTop: '30px' }}>
             <button
               onClick={() => setShowAll(true)}
@@ -80,4 +84,4 @@ const CardsGrid = () => {
   );
 };
 
-export default CardsGrid;
+export default CardsGrid;

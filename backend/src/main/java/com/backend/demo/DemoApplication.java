@@ -4,6 +4,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import com.backend.demo.model.Utilisateur;
+import com.backend.demo.model.ScoreQuiz;
 
 import com.backend.demo.repository.ScoreQuizRepository;
 import com.backend.demo.repository.UtilisateurRepository;
