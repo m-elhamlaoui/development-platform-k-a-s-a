@@ -1,12 +1,12 @@
-import { useState } from "react";  
+import { useState } from "react";
 import { useNavigate, useLocation, Link } from "react-router-dom";  
 import SocialLogin from "../../Components/Auth/SocialLogin";  
 import InputField from "../../Components/Auth/InputField";  
 import SignUpForm from "../../Components/Auth/SignUpForm";  
 import AuthService from "../../services/AuthService";  
-import "./styles/auth.css";  
+import "./styles/auth.css";
   
-const LoginPage = () => {  
+const LoginPage = () => {
   const [email, setEmail] = useState("");  
   const [password, setPassword] = useState("");  
   const [error, setError] = useState("");  

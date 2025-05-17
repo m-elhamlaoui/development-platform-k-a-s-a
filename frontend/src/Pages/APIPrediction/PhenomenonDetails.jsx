@@ -55,7 +55,7 @@ const descriptionMap = {
     title: "CME (Éjection de Masse Coronale)",
   htmlDesc: (
     <div style={{ textAlign: 'left', lineHeight: '1.8', color: '#333' }}>
-      <p><strong> CME – Éjection de Masse Coronale</strong></p>
+    
       <p>Une <strong>CME (Coronal Mass Ejection)</strong> est une énorme bulle de plasma et de champ magnétique éjectée de la <em>couronne solaire</em>, la couche extérieure de l’atmosphère du Soleil.</p>
 
       <p style={{ color: '#b085e9', fontWeight: 'bold' }}> Que se passe-t-il exactement ?</p>
@@ -182,7 +182,7 @@ const PhenomenonDetails = () => {
     <div className="page-container ">
       
       
-     <div className="description">{config.htmlDesc}</div>
+     <div className="descriptionUniq">{config.htmlDesc}</div>
       {/* Flares (solar_probabilities.json) */}
       {type === "flares" && Array.isArray(data) && data.length > 0 && (
   <>

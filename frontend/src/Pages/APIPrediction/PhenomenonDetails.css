@@ -75,7 +75,7 @@ body {
   border-radius: 8px;
 }
 
-.description {
+.descriptionUniq{
   max-width: 900px;
   margin: 0 auto 40px 40px; /* Aligné à gauche avec une marge */
   text-align: left;

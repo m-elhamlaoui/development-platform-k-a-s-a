@@ -47,14 +47,8 @@ function App() {
           }   
         />
 
-        <Route   
-          path="/solarsystem"   
-          element={  
-            <PrivateRoute>  
-              <SolarSystemPage />  
-            </PrivateRoute>  
-          }   
-        />  
+       <Route path="/solarsystem" element={<SolarSystemPage />} />
+
         <Route path='/solarsystem/earth' element={<Earth />} />
         <Route path='/solarsystem/pluto' element={<Pluto />} />
         <Route path='/solarsystem/sun' element={<Sun />} />
