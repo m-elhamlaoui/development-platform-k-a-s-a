@@ -5,7 +5,6 @@ import Header from '../../Components/Header/Header';
 import { Canvas } from '@react-three/fiber';
 import { Environment, OrbitControls } from '@react-three/drei';
 import EarthModel from '../../Planets_files/Earth2';
-import Footer from '../../Components/Footer/Footer';
 import stars from '../../assets/img/stars.jpg'; 
 
 function Earth() {
