@@ -1,26 +1,26 @@
 import { useState } from "react";  
+import { useNavigate, useLocation, Link } from "react-router-dom";  
 import SocialLogin from "../../Components/Auth/SocialLogin";  
 import InputField from "../../Components/Auth/InputField";  
 import SignUpForm from "../../Components/Auth/SignUpForm";  
-import "./styles/auth.css";  
-import axios from "axios";  
-import { useNavigate } from "react-router-dom";  
 import AuthService from "../../services/AuthService";  
+import "./styles/auth.css";  
   
 const LoginPage = () => {  
-  const [isLogin, setIsLogin] = useState(true);  
   const [email, setEmail] = useState("");  
   const [password, setPassword] = useState("");  
   const [error, setError] = useState("");  
   const navigate = useNavigate();  
+  const location = useLocation(); 
+  const fromSignup = location.state?.fromSignup || false;
+  
+  const isLogin = location.pathname === "/login";  
   
   const handleLogin = async (e) => {  
     e.preventDefault();  
     setError("");  
-      
     try {  
-      const response = await AuthService.login(email, password);  
-      // Rediriger vers la page d'accueil  
+      await AuthService.login(email, password);  
       navigate("/");  
     } catch (err) {  
       setError("Échec de la connexion. Veuillez vérifier vos identifiants.");  
@@ -32,7 +32,14 @@ const LoginPage = () => {
     <div className="login-page">  
       <div className="login-container">  
         <h2 className="form-title">{isLogin ? "Log in with" : "Sign up with"}</h2>  
-  
+
+        {/* ✅ Message de succès après inscription */}
+        {isLogin && fromSignup && (
+          <div className="success-message">
+            Registration successful! Please log in.
+          </div>
+        )}
+
         {error && <p className="error-message">{error}</p>}  
   
         {isLogin ? (  
@@ -49,7 +56,7 @@ const LoginPage = () => {
               value={password}  
               onChange={(e) => setPassword(e.target.value)}  
             />  
-            <a href="#" className="forgot-password-link">Forgot password?</a>  
+             
             <button type="submit" className="login-button">Log In</button>  
             <p className="separator"><span>or</span></p>  
             <SocialLogin />  
@@ -62,16 +69,12 @@ const LoginPage = () => {
           {isLogin ? (  
             <>  
               Don&apos;t have an account?{" "}  
-              <a href="#" className="signup-link" onClick={() => setIsLogin(false)}>  
-                Sign up  
-              </a>  
+              <Link to="/signup" className="signup-link">Sign up</Link>  
             </>  
           ) : (  
             <>  
               Already have an account?{" "}  
-              <a href="#" className="signup-link" onClick={() => setIsLogin(true)}>  
-                Log in  
-              </a>  
+              <Link to="/login" className="signup-link">Log in</Link>  
             </>  
           )}  
         </p>  

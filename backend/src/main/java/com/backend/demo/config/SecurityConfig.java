@@ -36,8 +36,10 @@ public class SecurityConfig {
             .cors(cors -> cors.configurationSource(corsConfigurationSource()))    
             .authorizeHttpRequests(auth -> auth    
                 .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()  // Allow preflight requests  
-                .requestMatchers("/api/auth/**").permitAll()    
-                .anyRequest().authenticated()    
+                .requestMatchers("/api/auth/**").permitAll()
+                    .requestMatchers("/api/utilisateurs/**").permitAll()
+
+                    .anyRequest().authenticated()
             )    
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))    
             .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);    

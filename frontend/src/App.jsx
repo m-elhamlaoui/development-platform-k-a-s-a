@@ -11,11 +11,11 @@ function App() {
   return (  
     <Router> 
       <Routes>  
-        <Route path="/login" element={<LoginPage />} />  
+        <Route path="/login" element={<LoginPage />} /> 
+        <Route path="/signup" element={<LoginPage />} /> 
         <Route path="/" element={<Home />} /> 
-        
-
-    
+        <Route path="/solarsystem" element={<SolarSystemPage />} /> 
+      
         <Route   
           path="/quiz"   
           element={  
@@ -33,14 +33,7 @@ function App() {
           }   
         />
 
-        <Route   
-          path="/solarsystem"   
-          element={  
-            <PrivateRoute>  
-              <SolarSystemPage />  
-            </PrivateRoute>  
-          }   
-        />  
+        
         {/* Autres routes protégées */}  
       </Routes>  
     </Router>  

@@ -61,7 +61,7 @@ const Header = () => {
               
               </li>
               <li className="nav-item">
-                 <Link className="nav-link" to="/solarsystem">Cartography</Link>
+                 <Link className="nav-link" to="/solarsystem" >Cartography</Link>
               </li>
               <li className="nav-item">
                  <Link className="nav-link" to="/quiz">Quiz</Link>
@@ -72,12 +72,12 @@ const Header = () => {
             {/* 🔐 Auth */}
             <div className="auth-buttons">  
               {isAuthenticated ? (  
-              <a href="#" className="login-link" onClick={handleLogout}>  
+              <a href="/" className="login-link" onClick={handleLogout}>  
               Déconnexion <i className="fa-solid fa-sign-out-alt ms-1"></i>  
                </a>  
                ) : (  
               <>  
-               <a href="#" className="btn-custom">Sign up</a>  
+               <a href="/signup" className="btn-custom">Sign up</a>  
                <Link to="/login" className="login-link">  
                   Log in <i className="fa-solid fa-arrow-right-to-bracket ms-1"></i>  
                  </Link>  
@@ -92,4 +92,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Header;

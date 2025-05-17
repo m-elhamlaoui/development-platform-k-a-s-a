@@ -24,7 +24,10 @@ const SignUpForm = () => {
     try {  
       const response = await AuthService.register(nom, email, password);  
       // Rediriger vers la page d'accueil  
-      navigate("/");  
+      navigate("/login", {
+  state: { fromSignup: true }
+});
+  
     } catch (err) {  
       setError("Échec de l'inscription. Veuillez réessayer.");  
       console.error("Erreur d'inscription:", err);  
@@ -32,7 +35,8 @@ const SignUpForm = () => {
   };  
   
   return (  
-    <form onSubmit={handleSignUp} className="signup-form">  
+    <form onSubmit={handleSignUp} className="login-form">
+ 
       {error && <p className="error-message">{error}</p>}  
         
       <InputField   
