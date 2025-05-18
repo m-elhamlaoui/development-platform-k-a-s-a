@@ -61,7 +61,7 @@ const Header = () => {
               
               </li>
               <li className="nav-item">
-                 <Link className="nav-link" to="/solarsystem" >Cartography</Link>
+                 <Link className="nav-link" to="/solarsystem" >Cartographie</Link>
               </li>
               <li className="nav-item">
                  <Link className="nav-link" to="/quiz">Quiz</Link>
@@ -77,9 +77,9 @@ const Header = () => {
                </a>  
                ) : (  
               <>  
-               <a href="/signup" className="btn-custom">Sign up</a>  
+               <a href="/signup" className="btn-custom">S’inscrire</a>  
                <Link to="/login" className="login-link">  
-                  Log in <i className="fa-solid fa-arrow-right-to-bracket ms-1"></i>  
+                  Se connecter <i className="fa-solid fa-arrow-right-to-bracket ms-1"></i>  
                  </Link>  
                </>  
                )}  

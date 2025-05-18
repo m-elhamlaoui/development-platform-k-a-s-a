@@ -19,7 +19,7 @@ AstroMap est une plateforme éducative et interactive dédiée à l'exploration 
 ## 🖼️ Aperçu des interfaces
 
 ### Page d'accueil
-![Homepage principale](interfaces/homepage-1.png)
+![Homepage principale](interfaces/homepage.png)
 
 ### Suite de la page d'accueil (prédiction en temps réel de ces événements)
 ![Homepage suite](interfaces/homepage-prediction.png)

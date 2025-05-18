@@ -23,7 +23,7 @@ const Footer = () => {
           </p>
 
           <div className="footer-follow">
-            <p className="footer-follow-title">Follow us</p>
+            <p className="footer-follow-title">Suivez-nous</p>
             <div className="footer-social">
               <a href="#"><img src={linkedin} alt="LinkedIn" /></a>
               <a href="#"><img src={insta} alt="Instagram" /></a>
@@ -35,11 +35,11 @@ const Footer = () => {
 
         {/* Colonne droite : Quick Links */}
         <div className="footer-section right-section">
-          <h3 className="footer-title">Quik link</h3>
+          <h3 className="footer-title">Lien rapide</h3>
           <ul>
-  <li><Link to="/signup">Sign up</Link></li>
-  <li><Link to="/login">Log in</Link></li>
-  <li><Link to="/solarsystem">Cartography</Link></li>
+  <li><Link to="/signup">S’inscrire</Link></li>
+  <li><Link to="/login">Se connecter</Link></li>
+  <li><Link to="/solarsystem">Cartographie</Link></li>
   <li><Link to="/quiz">Quiz</Link></li>
 </ul>
 
@@ -48,7 +48,7 @@ const Footer = () => {
 
       <div className="footer-line"></div>
       <div className="footer-bottom">
-        <p>&copy; 2024 AstroMap. All rights reserved.</p>
+        <p>&copy; 2024 AstroMap. Tous droits réservés</p>
       </div>
     </footer>
   );
