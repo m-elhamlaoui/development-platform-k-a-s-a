@@ -4,7 +4,7 @@ import "./QuizApp.css";
 import questions from "../../constants/questions.json";  
 import Question from "../../Components/question";  
 import Result from "../../Components/result";  
-import background from '../../assets/space.png';  
+import background from '../../assets/quiz_wallpaper.jpg';  
 import ScoreService from "../../services/ScoreService";
 import Header from '../../Components/Header/Header'; 
   

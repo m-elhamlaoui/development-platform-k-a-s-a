@@ -25,19 +25,23 @@
 }
 
 
-.question {
-  backdrop-filter: blur(2px);
-  background-color: rgba(0, 0, 0, 0);
-  font-size: 18px;
-  margin: 180px auto ;
-  padding: 15px 25px;
-  width: 60%;
-  border: 4px #ddd;
-  border-style:outset;
-  border-radius: 1%;
-  padding: 15px 25px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
+.question {  
+  backdrop-filter: blur(20px);  
+  -webkit-backdrop-filter: blur(20px); 
+  background-color: rgba(0, 0, 0, 0);  
+  font-size: 18px;  
+  width: 60%;  
+  border: 4px #ddd;  
+  border-style: outset;  
+  border-radius: 1%;  
+  padding: 15px 25px;  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  
+    
+  /* Solution pour centraliser */  
+  position: absolute;  
+  top: 50%;  
+  left: 50%;  
+  transform: translate(-50%, -50%);  
 }
 
 .question h2 {
@@ -67,9 +71,15 @@ button {
   /* border: 1px solid grey; */
 }
 
-button:hover {
-  background-color: green;
-  color: #000000;
+button:hover {  
+  background-color: #932dad; /* Violet au lieu de green */  
+  color: #000000;  
+}  
+  
+/* Applique ce style uniquement si le bouton n'est pas sélectionné */  
+.options button:hover:not(.selected) {  
+  background-color: #932dad; /* Violet au lieu de green */  
+  color: rgb(255, 255, 255);  
 }
 
 .results {
@@ -119,11 +129,11 @@ button:disabled {
   cursor: not-allowed;
 }
 
-button.submit {
-  background-color: green;
-  color: white;
-  padding: 10px 20px;
-  font-weight: bold;
+button.submit {  
+  background-color: #932dad; /* Violet au lieu de green */  
+  color: white;  
+  padding: 10px 20px;  
+  font-weight: bold;  
 }
 
 /* Applique ce style uniquement si le bouton n'est pas sélectionné */
