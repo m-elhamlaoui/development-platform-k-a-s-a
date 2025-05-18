@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate, useLocation, Link } from "react-router-dom";  
-import SocialLogin from "../../Components/Auth/SocialLogin";  
+
 import InputField from "../../Components/Auth/InputField";  
 import SignUpForm from "../../Components/Auth/SignUpForm";  
 import AuthService from "../../services/AuthService";  
@@ -58,8 +58,7 @@ const LoginPage = () => {
             />  
              
             <button type="submit" className="login-button">Log In</button>  
-            <p className="separator"><span>or</span></p>  
-            <SocialLogin />  
+             
           </form>  
         ) : (  
           <SignUpForm />  

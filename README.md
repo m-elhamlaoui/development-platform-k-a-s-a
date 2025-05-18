@@ -3,7 +3,7 @@
 AstroMap est une plateforme éducative et interactive dédiée à l'exploration spatiale. Elle permet aux utilisateurs de :  
 
 - **Naviguer en 3D** dans le système solaire grâce à **React Three Fiber**  
-- **Accéder à des informations détaillées** sur les planètes 
+- **Accéder à des informations détaillées** sur les planètes  
 - **Participer à des quiz thématiques** pour tester leurs connaissances en astronomie  
 - **Consulter des prédictions** sur les prochains phénomènes astronomiques  
 
@@ -12,6 +12,45 @@ AstroMap est une plateforme éducative et interactive dédiée à l'exploration 
 - **Backend** : Spring Boot (gestion des données et API)  
 - **Données des objets célestes** : Intégration d'API externes (NOAA – Space Weather Prediction Center (SWPC))  
 - **Frontend** : React.js avec Three.js pour des visualisations 3D immersives  
+
+---
+
+## 🖼️ Aperçu des interfaces
+
+### Page d'accueil
+![Homepage principale](interfaces/homepage-principale.png)
+
+### Suite de la page d'accueil 
+![Homepage suite](interfaces/homepage-1.png)
+
+### Page d'inscription
+![Inscription](interfaces/signup.png)
+
+### Page de connexion
+![Connexion](interfaces/login.png)
+
+### Cartographie des événements
+![Cartographie](interfaces/cartography.png)
+
+### Interface d'information sur les planètes
+![Infos planète](interfaces/infos-planete.png)
+
+### Page de prédiction astronomique
+![Prédiction](interfaces/details-prediction.png)
+
+### Détail d'une prédiction 
+![Détails prédiction](interfaces/details-prediction2.png)
+
+### Interface du quiz
+![Quiz page](interfaces/quiz-page.png)
+
+### Résultat du quiz
+![Résultat du quiz](interfaces/quiz-result.png)
+
+---
+
+
+ 
 
 ##   Bien démarrer
 
@@ -39,4 +78,4 @@ docker-compose up --build
 
 
 
-Cette architecture moderne garantit une expérience fluide et immersive pour les passionnés d'astronomie. 🚀🌌  
+
