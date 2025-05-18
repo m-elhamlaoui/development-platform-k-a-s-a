@@ -36,13 +36,7 @@ function Uranus() {
                 <div className="description">
                     <h1>Uranus</h1>
                     <p>
-                        Earth is the third planet from the Sun and the only astronomical object known to harbor life.
-                        This is enabled by Earth being an ocean world, the only one in the Solar System sustaining liquid surface water.
-                    </p>
-                    <p>
-                        Almost all of Earth's water is contained in its global ocean, covering 70.8% of Earth's crust. 
-                        The remaining 29.2% of Earth's crust is land, most of which is located in the form of continental landmasses 
-                        within Earth's land hemisphere.
+                        Uranus is unique among planets as it rotates on its side, with its axis tilted at nearly 98 degrees, likely the result of a massive collision early in its history. This ice giant appears as a featureless blue-green sphere due to methane in its atmosphere, which absorbs red light. Uranus has 27 known moons, all named after characters from the works of Shakespeare and Alexander Pope, and a system of 13 faint rings. With an average temperature of -355°F (-215°C), Uranus is the coldest planet in our solar system, despite not being the furthest from the Sun.
                     </p>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import { useState } from "react";  
 import InputField from "./InputField";  
-import SocialLogin from "./SocialLogin";  
+
 import { useNavigate } from "react-router-dom";  
 import AuthService from "../../services/AuthService";  
   
@@ -66,8 +66,7 @@ const SignUpForm = () => {
       />  
         
       <button type="submit" className="signup-button">Sign Up</button>  
-      <p className="separator"><span>or</span></p>  
-      <SocialLogin />  
+       
     </form>  
   );  
 };  

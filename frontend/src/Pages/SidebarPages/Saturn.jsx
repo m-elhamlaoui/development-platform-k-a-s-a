@@ -36,13 +36,7 @@ function Saturn() {
                 <div className="description">
                     <h1>Saturn</h1>
                     <p>
-                        Earth is the third planet from the Sun and the only astronomical object known to harbor life.
-                        This is enabled by Earth being an ocean world, the only one in the Solar System sustaining liquid surface water.
-                    </p>
-                    <p>
-                        Almost all of Earth's water is contained in its global ocean, covering 70.8% of Earth's crust. 
-                        The remaining 29.2% of Earth's crust is land, most of which is located in the form of continental landmasses 
-                        within Earth's land hemisphere.
+                        Saturn is instantly recognizable for its magnificent ring system, composed primarily of ice particles with some rocky debris and dust. This gas giant is the second-largest planet in our solar system but has the lowest density—so low that it would float in water if there were an ocean large enough. Saturn's atmosphere is primarily hydrogen and helium, and it has at least 82 moons, including Titan, the only moon in the solar system with a substantial atmosphere, and Enceladus, which has subsurface oceans and active geysers.
                     </p>
                 </div>
             </div>

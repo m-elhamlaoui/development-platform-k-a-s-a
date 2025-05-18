@@ -1,0 +1,48 @@
+[
+    {
+        "question": "Quelle est la huitième planète à partir du Soleil ?",
+        "answerOptions": [
+          {"text": "Neptune", "isCorrect": true},
+          {"text": "Uranus", "isCorrect": false},
+          {"text": "Jupiter", "isCorrect": false},
+          {"text": "Saturne", "isCorrect": false}
+        ]
+      },
+      {
+        "question": "Quelle est la principale couleur de Neptune ?",
+        "answerOptions": [
+          {"text": "Bleu profond", "isCorrect": true},
+          {"text": "Vert", "isCorrect": false},
+          {"text": "Orange", "isCorrect": false},
+          {"text": "Gris", "isCorrect": false}
+        ]
+      },
+      {
+        "question": "Neptune a été découverte grâce à :",
+        "answerOptions": [
+          {"text": "Des calculs mathématiques", "isCorrect": true},
+          {"text": "Une sonde spatiale", "isCorrect": false},
+          {"text": "L'observation accidentelle", "isCorrect": false},
+          {"text": "Un télescope Hubble", "isCorrect": false}
+        ]
+      },
+      {
+        "question": "Quel est le nom de la plus grande lune de Neptune ?",
+        "answerOptions": [
+          {"text": "Triton", "isCorrect": true},
+          {"text": "Néréide", "isCorrect": false},
+          {"text": "Galatée", "isCorrect": false},
+          {"text": "Larissa", "isCorrect": false}
+        ]
+      },
+      {
+        "question": "Quel phénomène climatique extrême est observé sur Neptune ?",
+        "answerOptions": [
+          {"text": "Des vents très rapides", "isCorrect": true},
+          {"text": "Des éruptions volcaniques", "isCorrect": false},
+          {"text": "Des tremblements de planète", "isCorrect": false},
+          {"text": "Des tsunamis cosmiques", "isCorrect": false}
+        ]
+      }
+    ]
+    

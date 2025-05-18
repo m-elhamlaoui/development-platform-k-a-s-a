@@ -1,4 +1,3 @@
-/* Reset de base */
 * {
     box-sizing: border-box;
 }
@@ -6,26 +5,52 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: auto;
-    min-height: 100vh;
+    height: 100%;
     font-family: Arial, sans-serif;
-    overflow-y: auto;
+    overflow: hidden; /* Empêche le défilement au niveau du body */
 }
 
 /* Container global */
 .jupiter-container {
-    display: flex;
-    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh; /* Important pour permettre le défilement */
+    overflow-y: auto; /* Permet le défilement vertical */
     
-    min-height: 100vh;
-}
-
-/* Partie principale */
-.jupiter-page {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+    
+    /* Animation facultative comme dans votre exemple */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideFadeIn 0.5s ease-out forwards;
+}
+
+/* Animation pour l'entrée en fondu */
+@keyframes slideFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Partie principale */
+.jupiter-page {
+    width: 100%; /* Pour que chaque section commence au début lors du défilement */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0; /* Espace comme dans votre exemple .header */
 }
 
 /* Wrapper du canvas */
@@ -47,6 +72,7 @@ canvas {
 /* Bloc description */
 .description {
     max-width: 900px;
+    width: 100%;
     background-color: #333;
     color: #fff;
     padding: 2rem;

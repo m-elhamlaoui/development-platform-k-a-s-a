@@ -36,13 +36,7 @@ function Sun() {
                 <div className="description">
                     <h1>Sun</h1>
                     <p>
-                        Earth is the third planet from the Sun and the only astronomical object known to harbor life.
-                        This is enabled by Earth being an ocean world, the only one in the Solar System sustaining liquid surface water.
-                    </p>
-                    <p>
-                        Almost all of Earth's water is contained in its global ocean, covering 70.8% of Earth's crust. 
-                        The remaining 29.2% of Earth's crust is land, most of which is located in the form of continental landmasses 
-                        within Earth's land hemisphere.
+                        The Sun is the star at the center of our solar system and contains 99.8% of the system's total mass. This yellow dwarf star fuses about 600 million tons of hydrogen into helium every second, generating the heat and light that sustains life on Earth. The Sun's surface temperature is about 5,500°C (10,000°F), while its core reaches 15 million°C (27 million°F). Its atmosphere consists of the photosphere (visible surface), chromosphere, and corona (outer atmosphere). Solar activity includes sunspots, solar flares, and coronal mass ejections that can affect Earth's magnetic field and electronics.
                     </p>
                 </div>
             </div>

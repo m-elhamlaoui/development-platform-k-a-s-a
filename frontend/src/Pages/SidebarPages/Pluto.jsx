@@ -36,13 +36,7 @@ function Pluto() {
                 <div className="description">
                     <h1>Pluto</h1>
                     <p>
-                        Earth is the third planet from the Sun and the only astronomical object known to harbor life.
-                        This is enabled by Earth being an ocean world, the only one in the Solar System sustaining liquid surface water.
-                    </p>
-                    <p>
-                        Almost all of Earth's water is contained in its global ocean, covering 70.8% of Earth's crust. 
-                        The remaining 29.2% of Earth's crust is land, most of which is located in the form of continental landmasses 
-                        within Earth's land hemisphere.
+                        Pluto, reclassified as a dwarf planet in 2006, orbits in the distant Kuiper Belt beyond Neptune. Despite its small size (smaller than Earth's moon), Pluto has five moons of its own, with Charon being the largest. NASA's New Horizons mission revealed a surprisingly complex world with mountains of water ice, glaciers of nitrogen ice, and a thin atmosphere that expands and contracts as Pluto's highly elliptical orbit takes it closer to and farther from the Sun. Pluto's surface features include the heart-shaped Tombaugh Regio and evidence of geological activity.
                     </p>
                 </div>
             </div>
