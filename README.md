@@ -9,7 +9,8 @@ AstroMap est une plateforme éducative et interactive dédiée à l'exploration 
 
 ### ⚙️ Technologies utilisées  
 
-- **Backend** : Spring Boot (gestion des données et API)  
+- **Backend** : Spring Boot (gestion des données et API)
+- **Base de données** : PostgreSQL  
 - **Données des objets célestes** : Intégration d'API externes (NOAA – Space Weather Prediction Center (SWPC))  
 - **Frontend** : React.js avec Three.js pour des visualisations 3D immersives  
 
