@@ -36,13 +36,7 @@ function Venus() {
                 <div className="description">
                     <h1>Venus</h1>
                     <p>
-                        Earth is the third planet from the Sun and the only astronomical object known to harbor life.
-                        This is enabled by Earth being an ocean world, the only one in the Solar System sustaining liquid surface water.
-                    </p>
-                    <p>
-                        Almost all of Earth's water is contained in its global ocean, covering 70.8% of Earth's crust. 
-                        The remaining 29.2% of Earth's crust is land, most of which is located in the form of continental landmasses 
-                        within Earth's land hemisphere.
+                        Venus, often called Earth's sister planet due to similar size and mass, is the second planet from the Sun and the hottest planet in our solar system. Its thick atmosphere of carbon dioxide creates a runaway greenhouse effect, trapping heat and resulting in surface temperatures of about 900°F (475°C)—hot enough to melt lead. Venus rotates backwards compared to other planets and so slowly that a day on Venus is longer than its year. The planet's surface is covered with volcanoes, mountains, and vast lava plains, hidden beneath permanent clouds of sulfuric acid that make it the brightest natural object in Earth's night sky after the Moon.
                     </p>
                 </div>
             </div>

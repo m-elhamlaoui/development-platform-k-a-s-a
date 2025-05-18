@@ -36,13 +36,8 @@ function Neptune() {
                 <div className="description">
                     <h1>Neptune</h1>
                     <p>
-                        Earth is the third planet from the Sun and the only astronomical object known to harbor life.
-                        This is enabled by Earth being an ocean world, the only one in the Solar System sustaining liquid surface water.
-                    </p>
-                    <p>
-                        Almost all of Earth's water is contained in its global ocean, covering 70.8% of Earth's crust. 
-                        The remaining 29.2% of Earth's crust is land, most of which is located in the form of continental landmasses 
-                        within Earth's land hemisphere.
+                        Neptune, the eighth and farthest known planet from the Sun, is a cold ice giant with the strongest winds in the solar system reaching speeds of over 1,200 mph (2,000 km/h). Its deep blue color comes from methane in its atmosphere absorbing red light. Neptune has 14 known moons, with Triton being the largest and only large moon in the solar system to orbit in the opposite direction of its planet's rotation. Neptune also features the Great Dark Spot, a storm system similar to Jupiter's Great Red Spot but more transient in nature.
+
                     </p>
                 </div>
             </div>

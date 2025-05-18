@@ -36,13 +36,7 @@ function Mercury() {
                 <div className="description">
                     <h1>mercury</h1>
                     <p>
-                        Earth is the third planet from the Sun and the only astronomical object known to harbor life.
-                        This is enabled by Earth being an ocean world, the only one in the Solar System sustaining liquid surface water.
-                    </p>
-                    <p>
-                        Almost all of Earth's water is contained in its global ocean, covering 70.8% of Earth's crust. 
-                        The remaining 29.2% of Earth's crust is land, most of which is located in the form of continental landmasses 
-                        within Earth's land hemisphere.
+                        Mercury is the smallest and innermost planet in our solar system, orbiting closest to the Sun. With virtually no atmosphere to retain heat, Mercury experiences the most extreme temperature variations of any planet, ranging from 800°F (430°C) during the day to -290°F (-180°C) at night. Its heavily cratered surface resembles our Moon, and it rotates so slowly that a single day on Mercury lasts for about 176 Earth days. Despite its proximity to the Sun, radar observations have detected ice in permanently shadowed craters at Mercury's poles.
                     </p>
                 </div>
             </div>

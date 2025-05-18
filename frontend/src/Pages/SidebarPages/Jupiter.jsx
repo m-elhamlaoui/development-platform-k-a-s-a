@@ -36,13 +36,7 @@ function Jupiter() {
                 <div className="description">
                     <h1>Jupiter</h1>
                     <p>
-                        Earth is the third planet from the Sun and the only astronomical object known to harbor life.
-                        This is enabled by Earth being an ocean world, the only one in the Solar System sustaining liquid surface water.
-                    </p>
-                    <p>
-                        Almost all of Earth's water is contained in its global ocean, covering 70.8% of Earth's crust. 
-                        The remaining 29.2% of Earth's crust is land, most of which is located in the form of continental landmasses 
-                        within Earth's land hemisphere.
+                        Jupiter is the largest planet in our solar system, with a mass two and a half times that of all other planets combined. This gas giant is known for its Great Red Spot, a massive storm that has been raging for at least 400 years. Jupiter's atmosphere consists mainly of hydrogen and helium, and it has a strong magnetic field that traps radiation in belts around the planet. With 79 known moons, including the four large Galilean moons (Io, Europa, Ganymede, and Callisto), Jupiter is like a miniature solar system.
                     </p>
                 </div>
             </div>

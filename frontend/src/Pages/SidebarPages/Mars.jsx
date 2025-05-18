@@ -36,13 +36,7 @@ function Mars() {
                 <div className="description">
                     <h1>Mars</h1>
                     <p>
-                        Earth is the third planet from the Sun and the only astronomical object known to harbor life.
-                        This is enabled by Earth being an ocean world, the only one in the Solar System sustaining liquid surface water.
-                    </p>
-                    <p>
-                        Almost all of Earth's water is contained in its global ocean, covering 70.8% of Earth's crust. 
-                        The remaining 29.2% of Earth's crust is land, most of which is located in the form of continental landmasses 
-                        within Earth's land hemisphere.
+                        Mars, often called the Red Planet due to its rusty iron oxide surface, is the fourth planet from the Sun. It features the largest volcano in the solar system, Olympus Mons, and a canyon system, Valles Marineris, that would stretch across the United States. Mars has two small moons, Phobos and Deimos, and evidence suggests it once had flowing water on its surface. With thin atmosphere composed mainly of carbon dioxide, Mars experiences extreme temperature variations and frequent dust storms that can engulf the entire planet.
                     </p>
                 </div>
             </div>
