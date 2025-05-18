@@ -31,12 +31,12 @@ const LoginPage = () => {
   return (  
     <div className="login-page">  
       <div className="login-container">  
-        <h2 className="form-title">{isLogin ? "Log in with" : "Sign up with"}</h2>  
+        <h2 className="form-title">{isLogin ? "Se connecter  " : "S'inscrire "}</h2>  
 
         {/* ✅ Message de succès après inscription */}
         {isLogin && fromSignup && (
           <div className="success-message">
-            Registration successful! Please log in.
+            Inscription réussie! Veuillez se connecter.
           </div>
         )}
 
@@ -46,18 +46,18 @@ const LoginPage = () => {
           <form onSubmit={handleLogin} className="login-form">  
             <InputField   
               type="email"   
-              placeholder="Email address"   
+              placeholder=" Email"   
               value={email}  
               onChange={(e) => setEmail(e.target.value)}  
             />  
             <InputField   
               type="password"   
-              placeholder="Password"   
+              placeholder="mot-de-passe"   
               value={password}  
               onChange={(e) => setPassword(e.target.value)}  
             />  
              
-            <button type="submit" className="login-button">Log In</button>  
+            <button type="submit" className="login-button">Connexion</button>  
              
           </form>  
         ) : (  
@@ -67,13 +67,13 @@ const LoginPage = () => {
         <p className="signup-prompt">  
           {isLogin ? (  
             <>  
-              Don&apos;t have an account?{" "}  
-              <Link to="/signup" className="signup-link">Sign up</Link>  
+              Vous n'avez pas de compte?{" "}  
+              <Link to="/signup" className="signup-link">Inscription</Link>  
             </>  
           ) : (  
             <>  
-              Already have an account?{" "}  
-              <Link to="/login" className="signup-link">Log in</Link>  
+              Vous avez déjà un compte ?{" "}  
+              <Link to="/login" className="signup-link">Connexion</Link>  
             </>  
           )}  
         </p>  
