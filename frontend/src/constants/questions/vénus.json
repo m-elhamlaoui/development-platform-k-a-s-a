@@ -1,0 +1,107 @@
+[
+  {
+    "question": "Quelle est la deuxième planète à partir du Soleil ?",
+    "answerOptions": [
+      {
+        "text": "Vénus",
+        "isCorrect": true
+      },
+      {
+        "text": "Mercure",
+        "isCorrect": false
+      },
+      {
+        "text": "Terre",
+        "isCorrect": false
+      },
+      {
+        "text": "Mars",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Quel phénomène rend Vénus la planète la plus chaude ?",
+    "answerOptions": [
+      {
+        "text": "Effet de serre extrême",
+        "isCorrect": true
+      },
+      {
+        "text": "Proximité au Soleil",
+        "isCorrect": false
+      },
+      {
+        "text": "Volcans actifs",
+        "isCorrect": false
+      },
+      {
+        "text": "Météorites fréquentes",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Vénus tourne sur elle-même en combien de temps ?",
+    "answerOptions": [
+      {
+        "text": "243 jours terrestres",
+        "isCorrect": true
+      },
+      {
+        "text": "24 heures",
+        "isCorrect": false
+      },
+      {
+        "text": "1 mois",
+        "isCorrect": false
+      },
+      {
+        "text": "365 jours",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Quel est le sens de rotation de Vénus ?",
+    "answerOptions": [
+      {
+        "text": "Rétrograde",
+        "isCorrect": true
+      },
+      {
+        "text": "Direct",
+        "isCorrect": false
+      },
+      {
+        "text": "Alterné",
+        "isCorrect": false
+      },
+      {
+        "text": "Aucun",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Quelle est l’atmosphère de Vénus composée principalement de :",
+    "answerOptions": [
+      {
+        "text": "Dioxyde de carbone",
+        "isCorrect": true
+      },
+      {
+        "text": "Oxygène",
+        "isCorrect": false
+      },
+      {
+        "text": "Azote",
+        "isCorrect": false
+      },
+      {
+        "text": "Hydrogène",
+        "isCorrect": false
+      }
+    ]
+  }
+]
