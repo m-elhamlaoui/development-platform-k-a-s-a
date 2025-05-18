@@ -12,7 +12,7 @@ const Header = () => {
     
   const handleLogout = () => {  
     AuthService.logout();  
-    navigate('/login');  
+    navigate('/');  
   };
 
 
