@@ -20,7 +20,7 @@ AstroMap est une plateforme éducative et interactive dédiée à l'exploration 
 ### Page d'accueil
 ![Homepage principale](interfaces/homepage-1.png)
 
-### Suite de la page d'accueil 
+### Suite de la page d'accueil (prédiction en temps réel de ces événements)
 ![Homepage suite](interfaces/homepage-prediction.png)
 
 ### Page d'inscription
@@ -29,16 +29,16 @@ AstroMap est une plateforme éducative et interactive dédiée à l'exploration 
 ### Page de connexion
 ![Connexion](interfaces/login.png)
 
-### Cartographie des événements
+### Cartographie 
 ![Cartographie](interfaces/cartography.png)
 
-### Interface d'information sur les planètes
+### Exemple d'interface d'information sur une planète
 ![Infos planète](interfaces/infos-planete.png)
 
-### Page de prédiction astronomique
+### Détail d'une prédiction astronomique
 ![Prédiction](interfaces/details-prediction.png)
 
-### Détail d'une prédiction 
+ 
 ![Détails prédiction](interfaces/details-prediction2.png)
 
 ### Interface du quiz
@@ -46,6 +46,8 @@ AstroMap est une plateforme éducative et interactive dédiée à l'exploration 
 
 ### Résultat du quiz
 ![Résultat du quiz](interfaces/quiz-result.png)
+![Résultat du quiz](interfaces/details-answers-quiz.png)
+
 
 ---
 
