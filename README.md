@@ -18,10 +18,10 @@ AstroMap est une plateforme éducative et interactive dédiée à l'exploration 
 ## 🖼️ Aperçu des interfaces
 
 ### Page d'accueil
-![Homepage principale](interfaces/homepage-principale.png)
+![Homepage principale](interfaces/homepage-1.png)
 
 ### Suite de la page d'accueil 
-![Homepage suite](interfaces/homepage-1.png)
+![Homepage suite](interfaces/homepage-prediction.png)
 
 ### Page d'inscription
 ![Inscription](interfaces/signup.png)
