@@ -1,6 +1,5 @@
 package com.backend.demo.service;  
   
-import com.backend.demo.model.Utilisateur;  
 import com.backend.demo.repository.UtilisateurRepository;  
 import org.springframework.security.core.userdetails.UserDetails;  
 import org.springframework.security.core.userdetails.UserDetailsService;  

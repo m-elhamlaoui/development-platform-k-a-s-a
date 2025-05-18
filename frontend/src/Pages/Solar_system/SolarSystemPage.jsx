@@ -2,7 +2,7 @@ import { useState, Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import SolarSystem from '../../Components/Solar_system';
-import Footer from '../../Components/Footer/Footer';
+
 import Header from '../../Components/Header/Header';
 import './SolarSystemPage.css';
 import Sidebar from '../../Components/SideMenu/sideMenu';

@@ -11,7 +11,7 @@ export const Button = ({
   onClick,
   buttonStyle = STYLES[0], // Default buttonStyle to the first in the array
   buttonSize = SIZES[0],   // Default buttonSize to the first in the array
-  buttonLink = '/sign-up'  // Default link if not passed
+  buttonLink = '/solarsystem'  // Default link if not passed
 }) => {
   // Check if the passed buttonStyle is valid, else fall back to the first in STYLES
   const checkButtonStyle = STYLES.includes(buttonStyle)

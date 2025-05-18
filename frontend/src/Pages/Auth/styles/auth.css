@@ -27,6 +27,11 @@ body {
   justify-content: center;
 }
 
+.signup-button:hover {
+   background: linear-gradient(135deg, #5e4db2, #7f9ded, #b085e9);
+
+}
+
 .login-container {
   margin: 0 auto;
   max-width: 410px;
@@ -190,6 +195,17 @@ body {
   border-radius: 0.31rem;
   background: #5F41E4;
   transition: 0.3s ease;
+}
+
+.success-message {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  padding: 0.75rem 1rem;
+  border-radius: 0.31rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  text-align: center;
+  border: 1px solid #badbcc;
 }
 
 .login-form .login-button:hover {

@@ -17,14 +17,22 @@ const InputField = ({ type, placeholder, icon, value, onChange }) => {
       <i className="material-symbols-rounded">{icon}</i>
 
       {type === "password" && (
-        <i
-          onClick={() => setIsPasswordShown((prevState) => !prevState)}
-          className="material-symbols-rounded eye-icon"
-          style={{ cursor: "pointer" }}
-        >
-          {isPasswordShown ? "visibility" : "visibility_off"}
-        </i>
-      )}
+  <img
+    src={isPasswordShown ? "/eye-off.png" : "/eye.svg"}
+    alt="Toggle visibility"
+    onClick={() => setIsPasswordShown((prev) => !prev)}
+    style={{
+      cursor: "pointer",
+      width: "20px",
+      position: "absolute",
+      right: "0.93rem",
+      top: "50%",
+      transform: "translateY(-50%)"
+    }}
+    className="eye-icon"
+  />
+)}
+
     </div>
   );
 };

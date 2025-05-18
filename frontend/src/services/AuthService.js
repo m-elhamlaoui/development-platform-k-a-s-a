@@ -38,9 +38,26 @@ const isAuthenticated = () => {
 };  
   
 const getToken = () => {  
-  const user = getCurrentUser();  
-  return user?.token;  
-};  
+  try {  
+    const userStr = localStorage.getItem('user');  
+    if (!userStr) {  
+      console.log("No user data found in localStorage");  
+      return null;  
+    }  
+      
+    const user = JSON.parse(userStr);  
+    if (!user.token) {  
+      console.log("Token property not found in user object");  
+      return null;  
+    }  
+      
+    console.log("Token successfully extracted from localStorage");  
+    return user.token;  
+  } catch (e) {  
+    console.error('Error parsing user from localStorage:', e);  
+    return null;  
+  }  
+};
   
 const AuthService = {  
   register,  

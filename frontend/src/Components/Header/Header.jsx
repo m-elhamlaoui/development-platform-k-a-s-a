@@ -1,11 +1,21 @@
 import React from 'react';
 import './Header.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-
+import AuthService from '../../services/AuthService';
 
 
 const Header = () => {
+  const navigate = useNavigate();  
+  // Appeler la fonction depuis l'objet AuthService  
+  const isAuthenticated = AuthService.isAuthenticated();  
+    
+  const handleLogout = () => {  
+    AuthService.logout();  
+    navigate('/');  
+  };
+
+
   return (
     <nav className="navbar navbar-expand-lg custom-navbar ">
       <div className="container-fluid d-flex align-items-center justify-content-between">
@@ -51,20 +61,29 @@ const Header = () => {
               
               </li>
               <li className="nav-item">
-                 <Link className="nav-link" to="/solarsystem">Cartography</Link>
+                 <Link className="nav-link" to="/solarsystem" >Cartography</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Quiz</a>
+                 <Link className="nav-link" to="/quiz">Quiz</Link>
+
               </li>
             </ul>
 
             {/* 🔐 Auth */}
-            <div className="auth-buttons">
-              <a href="#" className="btn-custom">Sign up</a>
-              <a href="#" className="login-link">
-                Log in <i className="fa-solid fa-arrow-right-to-bracket ms-1"></i>
-              </a>
-            </div>
+            <div className="auth-buttons">  
+              {isAuthenticated ? (  
+              <a href="/" className="login-link" onClick={handleLogout}>  
+              Déconnexion <i className="fa-solid fa-sign-out-alt ms-1"></i>  
+               </a>  
+               ) : (  
+              <>  
+               <a href="/signup" className="btn-custom">Sign up</a>  
+               <Link to="/login" className="login-link">  
+                  Log in <i className="fa-solid fa-arrow-right-to-bracket ms-1"></i>  
+                 </Link>  
+               </>  
+               )}  
+               </div>
 
           </div>
         </div>
@@ -73,4 +92,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Header;
