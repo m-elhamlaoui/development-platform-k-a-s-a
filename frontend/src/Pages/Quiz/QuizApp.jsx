@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import "./QuizApp.css";
 import Question from "../../Components/question";
 import Result from "../../Components/result";
-import background from '../../assets/quiz_wallpaper.jpg'; // Utilisation de l'image de fond du second fichier  
+import background from '../../assets/quiz_wallpaper.jpg';  
 import ScoreService from "../../services/ScoreService";
 import Header from '../../Components/Header/Header';
 import { useNavigate } from "react-router-dom";

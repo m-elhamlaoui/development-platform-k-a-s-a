@@ -17,6 +17,9 @@
     padding: 2rem;  
     display: flex;  
     flex-direction: column;  
+      opacity: 0;
+  transform: translateY(20px);
+  animation: slideFadeIn 0.5s ease-out forwards;
 }
 
 

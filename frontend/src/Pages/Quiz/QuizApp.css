@@ -15,6 +15,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+        opacity: 0;
+  transform: translateY(20px);
+  animation: slideFadeIn 0.5s ease-out forwards;
   
 }
 
@@ -91,6 +94,7 @@ button:hover {
   border-style: outset;
   padding: 15px 25px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
 }
 
 .results ul {
