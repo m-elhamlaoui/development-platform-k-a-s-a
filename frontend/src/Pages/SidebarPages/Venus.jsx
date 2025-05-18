@@ -34,9 +34,9 @@ function Venus() {
                 </div>
 
                 <div className="description">
-                    <h1>Venus</h1>
+                    <h1>Vénus</h1>
                     <p>
-                        Venus, often called Earth's sister planet due to similar size and mass, is the second planet from the Sun and the hottest planet in our solar system. Its thick atmosphere of carbon dioxide creates a runaway greenhouse effect, trapping heat and resulting in surface temperatures of about 900°F (475°C)—hot enough to melt lead. Venus rotates backwards compared to other planets and so slowly that a day on Venus is longer than its year. The planet's surface is covered with volcanoes, mountains, and vast lava plains, hidden beneath permanent clouds of sulfuric acid that make it the brightest natural object in Earth's night sky after the Moon.
+                        Vénus, deuxième planète du système solaire, est souvent qualifiée de jumelle de la Terre en raison de sa taille et de sa masse similaires. Cependant, elle présente des conditions extrêmes avec une atmosphère composée à 96% de dioxyde de carbone, créant un effet de serre runaway qui maintient sa surface à 465°C, température la plus chaude du système solaire. Entourée d'épais nuages d'acide sulfurique, Vénus tourne sur elle-même dans le sens inverse des autres planètes et si lentement qu'un jour vénusien dure plus longtemps que son année. Sa surface est dominée par des plaines volcaniques et plus de 1 600 volcans majeurs.
                     </p>
                 </div>
             </div>

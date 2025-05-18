@@ -136,6 +136,10 @@ const Sidebar = () => {
       <Button clicked={click} onClick={handleClick} />
       <SidebarContainer clicked={click}>
         <SlickBar>
+          <Item to="/solarsystem/earth">
+            <img src={earth} alt="earth" />
+            <Text clicked={click}>Terre</Text>
+          </Item>
           <Item to="/solarsystem/jupiter">
             <img src={jupiter} alt="jupiter" />
             <Text clicked={click}>Jupiter</Text>
@@ -146,7 +150,7 @@ const Sidebar = () => {
           </Item>
           <Item to="/solarsystem/mercury">
             <img src={mercury} alt="mercury" />
-            <Text clicked={click}>Mercury</Text>
+            <Text clicked={click}>Mercure</Text>
           </Item>
           <Item to="/solarsystem/neptune">
             <img src={neptune} alt="neptune" />
@@ -154,15 +158,15 @@ const Sidebar = () => {
           </Item>
           <Item to="/solarsystem/pluto">
             <img src={pluto} alt="pluto" />
-            <Text clicked={click}>Pluto</Text>
+            <Text clicked={click}>Pluton</Text>
           </Item>
           <Item to="/solarsystem/saturn">
             <img src={saturn} alt="saturn" />
-            <Text clicked={click}>Saturn</Text>
+            <Text clicked={click}>Saturne</Text>
           </Item>
           <Item to="/solarsystem/sun">
             <img src={sun} alt="sun" />
-            <Text clicked={click}>Sun</Text>
+            <Text clicked={click}>Soleil</Text>
           </Item>
           <Item to="/solarsystem/uranus">
             <img src={uranus} alt="uranus" />
@@ -170,12 +174,9 @@ const Sidebar = () => {
           </Item>
           <Item to="/solarsystem/venus">
             <img src={venus} alt="venus" />
-            <Text clicked={click}>Venus</Text>
+            <Text clicked={click}>Vénus</Text>
           </Item>
-          <Item to="/solarsystem/earth">
-            <img src={earth} alt="earth" />
-            <Text clicked={click}>Earth</Text>
-          </Item>
+          
         </SlickBar>
       </SidebarContainer>
     </Container>

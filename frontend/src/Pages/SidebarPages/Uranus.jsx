@@ -36,7 +36,7 @@ function Uranus() {
                 <div className="description">
                     <h1>Uranus</h1>
                     <p>
-                        Uranus is unique among planets as it rotates on its side, with its axis tilted at nearly 98 degrees, likely the result of a massive collision early in its history. This ice giant appears as a featureless blue-green sphere due to methane in its atmosphere, which absorbs red light. Uranus has 27 known moons, all named after characters from the works of Shakespeare and Alexander Pope, and a system of 13 faint rings. With an average temperature of -355°F (-215°C), Uranus is the coldest planet in our solar system, despite not being the furthest from the Sun.
+                        Uranus, septième planète du système solaire, se distingue par son axe de rotation incliné à 98 degrés, la faisant littéralement "rouler" sur son orbite. Cette géante glacée, composée principalement d'hydrogène, d'hélium et de glaces d'eau, d'ammoniac et de méthane, présente une couleur bleu-vert caractéristique. Entourée de 27 lunes connues et de 13 anneaux étroits et sombres, Uranus possède une atmosphère dynamique malgré sa température extrêmement froide d'environ -224°C, faisant d'elle l'une des planètes les plus froides du système solaire.
                     </p>
                 </div>
             </div>

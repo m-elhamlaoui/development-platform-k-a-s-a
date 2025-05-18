@@ -34,9 +34,9 @@ function Mercury() {
                 </div>
 
                 <div className="description">
-                    <h1>mercury</h1>
+                    <h1>Mercure</h1>
                     <p>
-                        Mercury is the smallest and innermost planet in our solar system, orbiting closest to the Sun. With virtually no atmosphere to retain heat, Mercury experiences the most extreme temperature variations of any planet, ranging from 800°F (430°C) during the day to -290°F (-180°C) at night. Its heavily cratered surface resembles our Moon, and it rotates so slowly that a single day on Mercury lasts for about 176 Earth days. Despite its proximity to the Sun, radar observations have detected ice in permanently shadowed craters at Mercury's poles.
+                        Mercure est la planète la plus proche du Soleil et la plus petite du système solaire. Dépourvue d'atmosphère significative, elle subit des variations de température extrêmes, passant de 430°C le jour à -180°C la nuit. Sa surface, criblée de cratères comme notre Lune, témoigne d'une activité géologique ancienne. Mercure effectue une rotation complète sur elle-même en 59 jours terrestres, tandis que son année ne dure que 88 jours, créant ainsi un jour mercurien équivalent à 176 jours terrestres.
                     </p>
                 </div>
             </div>

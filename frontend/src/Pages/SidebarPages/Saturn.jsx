@@ -34,10 +34,9 @@ function Saturn() {
                 </div>
 
                 <div className="description">
-                    <h1>Saturn</h1>
+                    <h1>Saturne</h1>
                     <p>
-                        Saturn is instantly recognizable for its magnificent ring system, composed primarily of ice particles with some rocky debris and dust. This gas giant is the second-largest planet in our solar system but has the lowest density—so low that it would float in water if there were an ocean large enough. Saturn's atmosphere is primarily hydrogen and helium, and it has at least 82 moons, including Titan, the only moon in the solar system with a substantial atmosphere, and Enceladus, which has subsurface oceans and active geysers.
-                    </p>
+                        Saturne, sixième planète du système solaire, est célèbre pour son spectaculaire système d'anneaux composés de glace et de poussières, s'étendant sur plus de 280 000 km. Cette géante gazeuse, composée principalement d'hydrogène et d'hélium, possède une densité si faible qu'elle flotterait dans un océan suffisamment grand. Avec 82 lunes confirmées, dont Titan qui possède une atmosphère dense, Saturne présente des phénomènes uniques comme un hexagone nuageux à son pôle nord et des tempêtes périodiques gigantesques.                    </p>
                 </div>
             </div>
 

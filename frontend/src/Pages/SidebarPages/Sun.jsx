@@ -34,9 +34,9 @@ function Sun() {
                 </div>
 
                 <div className="description">
-                    <h1>Sun</h1>
+                    <h1>Soleil</h1>
                     <p>
-                        The Sun is the star at the center of our solar system and contains 99.8% of the system's total mass. This yellow dwarf star fuses about 600 million tons of hydrogen into helium every second, generating the heat and light that sustains life on Earth. The Sun's surface temperature is about 5,500°C (10,000°F), while its core reaches 15 million°C (27 million°F). Its atmosphere consists of the photosphere (visible surface), chromosphere, and corona (outer atmosphere). Solar activity includes sunspots, solar flares, and coronal mass ejections that can affect Earth's magnetic field and electronics.
+                        Le Soleil est l'étoile au centre de notre système solaire, représentant 99,86% de la masse totale de celui-ci. Cette sphère de plasma brûlant à environ 15 millions de degrés en son cœur génère son énergie par fusion nucléaire, transformant l'hydrogène en hélium. Sa surface visible, la photosphère, affiche une température d'environ 5 500°C et présente des phénomènes comme les taches solaires et les éruptions solaires. Âgé d'environ 4,6 milliards d'années, le Soleil est à mi-parcours de sa vie et continuera de briller pendant encore 5 milliards d'années avant de se transformer en géante rouge.
                     </p>
                 </div>
             </div>

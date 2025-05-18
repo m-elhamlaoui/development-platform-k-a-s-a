@@ -36,7 +36,7 @@ function Mars() {
                 <div className="description">
                     <h1>Mars</h1>
                     <p>
-                        Mars, often called the Red Planet due to its rusty iron oxide surface, is the fourth planet from the Sun. It features the largest volcano in the solar system, Olympus Mons, and a canyon system, Valles Marineris, that would stretch across the United States. Mars has two small moons, Phobos and Deimos, and evidence suggests it once had flowing water on its surface. With thin atmosphere composed mainly of carbon dioxide, Mars experiences extreme temperature variations and frequent dust storms that can engulf the entire planet.
+                        Mars, surnommée la "planète rouge" en raison de sa surface riche en oxyde de fer, est la quatrième planète du système solaire. Elle abrite le plus haut volcan connu, Olympus Mons, et le plus grand canyon, Valles Marineris. Avec ses deux petites lunes, Phobos et Deimos, Mars présente des saisons similaires à celles de la Terre grâce à son inclinaison axiale comparable. Les missions spatiales ont révélé des traces d'eau ancienne et possiblement actuelle, faisant de Mars une cible privilégiée pour la recherche de vie extraterrestre.
                     </p>
                 </div>
             </div>

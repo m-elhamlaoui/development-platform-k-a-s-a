@@ -36,8 +36,7 @@ function Neptune() {
                 <div className="description">
                     <h1>Neptune</h1>
                     <p>
-                        Neptune, the eighth and farthest known planet from the Sun, is a cold ice giant with the strongest winds in the solar system reaching speeds of over 1,200 mph (2,000 km/h). Its deep blue color comes from methane in its atmosphere absorbing red light. Neptune has 14 known moons, with Triton being the largest and only large moon in the solar system to orbit in the opposite direction of its planet's rotation. Neptune also features the Great Dark Spot, a storm system similar to Jupiter's Great Red Spot but more transient in nature.
-
+                        Neptune, huitième planète du système solaire, est la plus éloignée du Soleil et la dernière des géantes gazeuses. Caractérisée par sa couleur bleue intense due à la présence de méthane dans son atmosphère, elle abrite les vents les plus rapides du système solaire atteignant 2 100 km/h. Neptune possède 14 lunes connues, dont Triton qui orbite dans le sens opposé à la rotation de la planète, ainsi que cinq anneaux principaux. Découverte par calculs mathématiques plutôt que par observation directe, elle n'a été visitée qu'une seule fois par la sonde Voyager 2 en 1989.
                     </p>
                 </div>
             </div>

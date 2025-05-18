@@ -34,9 +34,10 @@ function Pluto() {
                 </div>
 
                 <div className="description">
-                    <h1>Pluto</h1>
+                    <h1>Pluton</h1>
                     <p>
-                        Pluto, reclassified as a dwarf planet in 2006, orbits in the distant Kuiper Belt beyond Neptune. Despite its small size (smaller than Earth's moon), Pluto has five moons of its own, with Charon being the largest. NASA's New Horizons mission revealed a surprisingly complex world with mountains of water ice, glaciers of nitrogen ice, and a thin atmosphere that expands and contracts as Pluto's highly elliptical orbit takes it closer to and farther from the Sun. Pluto's surface features include the heart-shaped Tombaugh Regio and evidence of geological activity.
+                        Pluton, autrefois considérée comme la neuvième planète du système solaire, est désormais classée comme planète naine depuis 2006. Avec un diamètre d'environ 2 370 km, elle est composée principalement de roche et de glaces. Sa surface présente des caractéristiques étonnantes comme la "Tombaugh Regio", une région en forme de cœur formée de glace d'azote. Accompagnée de cinq lunes dont Charon, la plus grande, Pluton effectue une orbite excentrique qui la fait parfois passer plus près du Soleil que Neptune.
+
                     </p>
                 </div>
             </div>
