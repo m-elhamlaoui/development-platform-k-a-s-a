@@ -1,0 +1,46 @@
+[{
+    "question": "Quelle planète est surnommée 'la planète rouge' ?",
+    "answerOptions": [
+      {"text": "Mars", "isCorrect": true},
+      {"text": "Mercure", "isCorrect": false},
+      {"text": "Jupiter", "isCorrect": false},
+      {"text": "Vénus", "isCorrect": false}
+    ]
+  },
+  {
+    "question": "Quelle est la principale cause de la couleur rouge de Mars ?",
+    "answerOptions": [
+      {"text": "Présence d’oxyde de fer", "isCorrect": true},
+      {"text": "Volcans rouges", "isCorrect": false},
+      {"text": "Tempêtes de sable", "isCorrect": false},
+      {"text": "Lave", "isCorrect": false}
+    ]
+  },
+  {
+    "question": "Combien de lunes a Mars ?",
+    "answerOptions": [
+      {"text": "2", "isCorrect": true},
+      {"text": "1", "isCorrect": false},
+      {"text": "0", "isCorrect": false},
+      {"text": "4", "isCorrect": false}
+    ]
+  },
+  {
+    "question": "Quel est le nom du plus grand volcan de Mars ?",
+    "answerOptions": [
+      {"text": "Olympus Mons", "isCorrect": true},
+      {"text": "Valles Marineris", "isCorrect": false},
+      {"text": "Mons Huygens", "isCorrect": false},
+      {"text": "Elysium Mons", "isCorrect": false}
+    ]
+  },
+  {
+    "question": "Quelle est la durée d'une année sur Mars ?",
+    "answerOptions": [
+      {"text": "687 jours terrestres", "isCorrect": true},
+      {"text": "365 jours", "isCorrect": false},
+      {"text": "225 jours", "isCorrect": false},
+      {"text": "100 jours", "isCorrect": false}
+    ]
+  }
+]

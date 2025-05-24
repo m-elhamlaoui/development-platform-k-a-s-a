@@ -1,0 +1,47 @@
+[
+    {
+        "question": "Quelle planète est inclinée presque à l’horizontale ?",
+        "answerOptions": [
+          {"text": "Uranus", "isCorrect": true},
+          {"text": "Saturne", "isCorrect": false},
+          {"text": "Jupiter", "isCorrect": false},
+          {"text": "Mars", "isCorrect": false}
+        ]
+      },
+      {
+        "question": "Quelle est la couleur dominante d’Uranus ?",
+        "answerOptions": [
+          {"text": "Bleu-vert", "isCorrect": true},
+          {"text": "Rouge", "isCorrect": false},
+          {"text": "Jaune", "isCorrect": false},
+          {"text": "Blanche", "isCorrect": false}
+        ]
+      },
+      {
+        "question": "Uranus est principalement composée de :",
+        "answerOptions": [
+          {"text": "Glaces et gaz", "isCorrect": true},
+          {"text": "Roches solides", "isCorrect": false},
+          {"text": "Métal fondu", "isCorrect": false},
+          {"text": "Magma", "isCorrect": false}
+        ]
+      },
+      {
+        "question": "Combien de lunes Uranus possède-t-elle (environ) ?",
+        "answerOptions": [
+          {"text": "27", "isCorrect": true},
+          {"text": "1", "isCorrect": false},
+          {"text": "10", "isCorrect": false},
+          {"text": "50", "isCorrect": false}
+        ]
+      },
+      {
+        "question": "Uranus possède-t-elle des anneaux ?",
+        "answerOptions": [
+          {"text": "Oui", "isCorrect": true},
+          {"text": "Non", "isCorrect": false},
+          {"text": "Seulement pendant les éclipses", "isCorrect": false},
+          {"text": "Seulement visibles en infrarouge", "isCorrect": false}
+        ]
+      }
+]

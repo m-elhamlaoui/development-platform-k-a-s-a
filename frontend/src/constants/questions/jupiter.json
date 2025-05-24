@@ -1,0 +1,47 @@
+[
+    {
+        "question": "Quelle est la plus grande planète du système solaire ?",
+        "answerOptions": [
+          {"text": "Jupiter", "isCorrect": true},
+          {"text": "Saturne", "isCorrect": false},
+          {"text": "Neptune", "isCorrect": false},
+          {"text": "Uranus", "isCorrect": false}
+        ]
+      },
+      {
+        "question": "Quel est le nom de la grande tempête visible sur Jupiter ?",
+        "answerOptions": [
+          {"text": "La grande tache rouge", "isCorrect": true},
+          {"text": "L’œil du cyclone", "isCorrect": false},
+          {"text": "Le vortex géant", "isCorrect": false},
+          {"text": "L'anneau rouge", "isCorrect": false}
+        ]
+      },
+      {
+        "question": "Combien de lunes connues possède Jupiter (environ) ?",
+        "answerOptions": [
+          {"text": "Plus de 90", "isCorrect": true},
+          {"text": "1", "isCorrect": false},
+          {"text": "10", "isCorrect": false},
+          {"text": "25", "isCorrect": false}
+        ]
+      },
+      {
+        "question": "Quel est le principal composant de l’atmosphère de Jupiter ?",
+        "answerOptions": [
+          {"text": "Hydrogène", "isCorrect": true},
+          {"text": "Oxygène", "isCorrect": false},
+          {"text": "Dioxyde de carbone", "isCorrect": false},
+          {"text": "Azote", "isCorrect": false}
+        ]
+      },
+      {
+        "question": "Comment s’appelle la plus grande lune de Jupiter ?",
+        "answerOptions": [
+          {"text": "Ganymède", "isCorrect": true},
+          {"text": "Io", "isCorrect": false},
+          {"text": "Callisto", "isCorrect": false},
+          {"text": "Europe", "isCorrect": false}
+        ]
+      }
+]

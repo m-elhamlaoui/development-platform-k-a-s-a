@@ -1,0 +1,47 @@
+[
+    {
+      "question": "Quelle est la position de Mercure à partir du Soleil ?",
+      "answerOptions": [
+        {"text": "Première", "isCorrect": true},
+        {"text": "Deuxième", "isCorrect": false},
+        {"text": "Troisième", "isCorrect": false},
+        {"text": "Quatrième", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Quelle est la principale caractéristique de la surface de Mercure ?",
+      "answerOptions": [
+        {"text": "Couverte de cratères", "isCorrect": true},
+        {"text": "Recouverte de glace", "isCorrect": false},
+        {"text": "Entourée d'anneaux", "isCorrect": false},
+        {"text": "Très nuageuse", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Mercure a-t-elle une atmosphère dense ?",
+      "answerOptions": [
+        {"text": "Non, presque inexistante", "isCorrect": true},
+        {"text": "Oui, très épaisse", "isCorrect": false},
+        {"text": "Oui, comme la Terre", "isCorrect": false},
+        {"text": "Non, mais avec des nuages", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Combien de lunes possède Mercure ?",
+      "answerOptions": [
+        {"text": "0", "isCorrect": true},
+        {"text": "1", "isCorrect": false},
+        {"text": "2", "isCorrect": false},
+        {"text": "3", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Quelle est la durée d'une année sur Mercure (révolution autour du Soleil) ?",
+      "answerOptions": [
+        {"text": "88 jours terrestres", "isCorrect": true},
+        {"text": "365 jours", "isCorrect": false},
+        {"text": "225 jours", "isCorrect": false},
+        {"text": "687 jours", "isCorrect": false}
+      ]
+    }
+]

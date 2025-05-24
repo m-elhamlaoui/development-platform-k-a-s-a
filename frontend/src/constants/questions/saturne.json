@@ -1,0 +1,48 @@
+[
+    {
+        "question": "Quelle planète est célèbre pour ses anneaux spectaculaires ?",
+        "answerOptions": [
+          {"text": "Saturne", "isCorrect": true},
+          {"text": "Jupiter", "isCorrect": false},
+          {"text": "Uranus", "isCorrect": false},
+          {"text": "Neptune", "isCorrect": false}
+        ]
+      },
+      {
+        "question": "Quels sont les anneaux de Saturne principalement composés ?",
+        "answerOptions": [
+          {"text": "Glace et poussière", "isCorrect": true},
+          {"text": "Gaz et feu", "isCorrect": false},
+          {"text": "Roches volcaniques", "isCorrect": false},
+          {"text": "Matière noire", "isCorrect": false}
+        ]
+      },
+      {
+        "question": "Combien de lunes environ Saturne possède-t-elle ?",
+        "answerOptions": [
+          {"text": "Plus de 80", "isCorrect": true},
+          {"text": "1", "isCorrect": false},
+          {"text": "10", "isCorrect": false},
+          {"text": "5", "isCorrect": false}
+        ]
+      },
+      {
+        "question": "Comment s'appelle la plus grande lune de Saturne ?",
+        "answerOptions": [
+          {"text": "Titan", "isCorrect": true},
+          {"text": "Rhéa", "isCorrect": false},
+          {"text": "Dioné", "isCorrect": false},
+          {"text": "Japet", "isCorrect": false}
+        ]
+      },
+      {
+        "question": "Quel gaz domine l’atmosphère de Saturne ?",
+        "answerOptions": [
+          {"text": "Hydrogène", "isCorrect": true},
+          {"text": "Oxygène", "isCorrect": false},
+          {"text": "Méthane", "isCorrect": false},
+          {"text": "Dioxyde de carbone", "isCorrect": false}
+        ]
+      }
+    
+]
