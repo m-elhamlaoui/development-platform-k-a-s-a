@@ -15,6 +15,7 @@ pipeline {
     stages {  
         stage('Checkout') {  
             steps {  
+                deleteDir()
                 checkout scm  
                 echo "Code récupéré depuis le repository"  
             }  
