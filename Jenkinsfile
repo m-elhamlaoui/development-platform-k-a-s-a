@@ -1,15 +1,15 @@
 pipeline {  
     agent any  
       
+    triggers {  
+        githubPush()  
+        pollSCM('H/5 * * * *')  
+    }  
+      
     environment {  
         DOCKER_HUB_CREDENTIALS = credentials('docker-hub-credentials')  
         DOCKER_HUB_REPO = 'asma99/astromap'  
         COMPOSE_PROJECT_NAME = 'astromap'  
-    }  
-      
-    triggers {  
-        githubPush()  
-        pollSCM('H/5 * * * *')  // Vérification toutes les 5 minutes en backup  
     }  
       
     stages {  
