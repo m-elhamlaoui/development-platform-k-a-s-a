@@ -6,7 +6,7 @@ services:
     build:
       context: ./frontend
     ports:
-      - "3000:5173"
+      - "3000:80"
     command: npm run dev -- --host
     volumes:
       - ./frontend:/app
@@ -57,9 +57,9 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
-  # Jenkins BlueOcean
+  # Jenkins
   jenkins:
-    image: jenkinsci/blueocean
+    image: jenkins/jenkins:lts
     container_name: jenkins-blueocean
     ports:
       - "8081:8080"

@@ -1,0 +1,60 @@
+version: "3.8"  
+  
+services:  
+  # Frontend  
+  frontend:  
+    image: asma99/astromap-frontend:latest  
+    ports:  
+      - "3000:80"  
+    networks:  
+      - app-network  
+    restart: unless-stopped  
+  
+  # Backend  
+  backend:  
+    image: asma99/astromap-backend:latest  
+    ports:  
+      - "8080:8080"  
+    depends_on:  
+      postgres:  
+        condition: service_healthy  
+    environment:  
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/my_database  
+      SPRING_DATASOURCE_USERNAME: postgres  
+      SPRING_DATASOURCE_PASSWORD: postgres  
+      SPRING_PROFILES_ACTIVE: prod  
+    networks:  
+      - app-network  
+    restart: unless-stopped  
+    healthcheck:  
+      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health"]  
+      interval: 30s  
+      timeout: 10s  
+      retries: 3  
+  
+  # PostgreSQL  
+  postgres:  
+    image: postgres:15  
+    ports:  
+      - "5432:5432"  
+    environment:  
+      POSTGRES_USER: postgres  
+      POSTGRES_PASSWORD: postgres  
+      POSTGRES_DB: my_database  
+    networks:  
+      - app-network  
+    volumes:  
+      - postgres_data:/var/lib/postgresql/data  
+    restart: unless-stopped  
+    healthcheck:  
+      test: ["CMD-SHELL", "pg_isready -U postgres"]  
+      interval: 10s  
+      timeout: 5s  
+      retries: 5  
+  
+networks:  
+  app-network:  
+    driver: bridge  
+  
+volumes:  
+  postgres_data:
