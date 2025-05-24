@@ -7,6 +7,11 @@ pipeline {
         COMPOSE_PROJECT_NAME = 'astromap'  
     }  
       
+    triggers {  
+        githubPush()  
+        pollSCM('H/5 * * * *')  // Vérification toutes les 5 minutes en backup  
+    }  
+      
     stages {  
         stage('Checkout') {  
             steps {  
@@ -47,6 +52,14 @@ pipeline {
             steps {  
                 script {  
                     try {  
+                        echo "Attente que PostgreSQL soit en bonne santé..."  
+                        sh '''  
+                            timeout 180 bash -c 'until [ "$(docker compose ps postgres --format json | jq -r ".[0].Health")" = "healthy" ]; do  
+                                echo "PostgreSQL health check en cours..."  
+                                sleep 10  
+                            done'  
+                        '''  
+                          
                         echo "Exécution des tests backend..."  
                         sh 'docker compose run --rm backend-tests'  
                         echo "Tests réussis ✅"  
