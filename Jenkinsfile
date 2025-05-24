@@ -53,7 +53,11 @@ pipeline {
             steps {  
                 script {  
                     try {  
-                        echo "Attente que PostgreSQL soit en bonne santé..."  
+                        // Correction de la ligne problématique dans l'étape Run Tests  
+                        sh '''  
+                            echo "Attente de PostgreSQL..."  
+                            timeout 120 bash -c "until docker compose exec -T postgres pg_isready -U postgres; do echo \\"PostgreSQL n'est pas encore prêt - attente...\\"; sleep 5; done"  
+                        '''  
                         sh '''  
                             timeout 180 bash -c 'until [ "$(docker compose ps postgres --format json | jq -r ".[0].Health")" = "healthy" ]; do  
                                 echo "PostgreSQL health check en cours..."  
