@@ -18,8 +18,7 @@ pipeline {
         stage('Prepare Environment') {  
             steps {  
                 script {  
-                    // Nettoyer les conteneurs existants  
-                    sh 'docker-compose down --remove-orphans || true'  
+                    sh 'docker compose down --remove-orphans || true'  
                     sh 'docker system prune -f || true'  
                 }  
             }  
@@ -28,11 +27,18 @@ pipeline {
         stage('Start Database') {  
             steps {  
                 script {  
-                    // Démarrer PostgreSQL en premier  
-                    sh 'docker-compose up -d postgres'  
-                    // Attendre que la base soit prête  
-                    sh 'sleep 15'  
-                    sh 'docker-compose logs postgres'  
+                    sh 'docker compose up -d postgres'  
+                      
+                    sh '''  
+                        echo "Attente de PostgreSQL..."  
+                        timeout 120 bash -c 'until docker compose exec -T postgres pg_isready -U postgres; do  
+                            echo "PostgreSQL n\'est pas encore prêt - attente..."  
+                            sleep 5  
+                        done'  
+                    '''  
+                      
+                    sh 'docker compose logs postgres'  
+                    echo "PostgreSQL est prêt ✅"  
                 }  
             }  
         }  
@@ -42,11 +48,12 @@ pipeline {
                 script {  
                     try {  
                         echo "Exécution des tests backend..."  
-                        sh 'docker-compose run --rm backend-tests'  
+                        sh 'docker compose run --rm backend-tests'  
                         echo "Tests réussis ✅"  
                     } catch (Exception e) {  
                         echo "Échec des tests ❌"  
-                        sh 'docker-compose logs backend-tests'  
+                        sh 'docker compose logs backend-tests'  
+                        sh 'docker compose logs postgres'  
                         throw e  
                     }  
                 }  
@@ -60,7 +67,7 @@ pipeline {
                         script {  
                             echo "Construction de l'image backend..."  
                             sh """  
-                                docker build -t ${DOCKER_HUB_REPO}-backend:${BUILD_NUMBER} ./backend  
+                                docker build -f backend/Dockerfile -t ${DOCKER_HUB_REPO}-backend:${BUILD_NUMBER} ./backend  
                                 docker tag ${DOCKER_HUB_REPO}-backend:${BUILD_NUMBER} ${DOCKER_HUB_REPO}-backend:latest  
                             """  
                             echo "Image backend construite ✅"  
@@ -72,7 +79,7 @@ pipeline {
                         script {  
                             echo "Construction de l'image frontend..."  
                             sh """  
-                                docker build -t ${DOCKER_HUB_REPO}-frontend:${BUILD_NUMBER} ./frontend  
+                                docker build -f frontend/Dockerfile -t ${DOCKER_HUB_REPO}-frontend:${BUILD_NUMBER} ./frontend  
                                 docker tag ${DOCKER_HUB_REPO}-frontend:${BUILD_NUMBER} ${DOCKER_HUB_REPO}-frontend:latest  
                             """  
                             echo "Image frontend construite ✅"  
@@ -90,6 +97,11 @@ pipeline {
                         docker run --rm -v /var/run/docker.sock:/var/run/docker.sock \\  
                         aquasec/trivy:latest image --exit-code 0 --severity HIGH,CRITICAL \\  
                         ${DOCKER_HUB_REPO}-backend:${BUILD_NUMBER} || true  
+                    """  
+                    sh """  
+                        docker run --rm -v /var/run/docker.sock:/var/run/docker.sock \\  
+                        aquasec/trivy:latest image --exit-code 0 --severity HIGH,CRITICAL \\  
+                        ${DOCKER_HUB_REPO}-frontend:${BUILD_NUMBER} || true  
                     """  
                 }  
             }  
@@ -118,21 +130,17 @@ pipeline {
                 script {  
                     echo "Déploiement en staging..."  
                       
-                    // Arrêter les services existants  
-                    sh 'docker-compose down'  
+                    sh 'docker compose -f docker-compose.prod.yml down || true'  
                       
-                    // Mettre à jour les images  
                     sh """  
                         docker pull ${DOCKER_HUB_REPO}-backend:latest  
                         docker pull ${DOCKER_HUB_REPO}-frontend:latest  
                     """  
                       
-                    // Redémarrer avec les nouvelles images  
-                    sh 'docker-compose up -d'  
+                    sh 'docker compose -f docker-compose.prod.yml up -d'  
                       
-                    // Vérifier que les services sont en cours d'exécution  
-                    sh 'sleep 30'  
-                    sh 'docker-compose ps'  
+                    sh 'sleep 45'  
+                    sh 'docker compose -f docker-compose.prod.yml ps'  
                       
                     echo "Déploiement terminé ✅"  
                 }  
@@ -144,19 +152,17 @@ pipeline {
                 script {  
                     echo "Vérification de la santé des services..."  
                       
-                    // Vérifier le backend  
                     sh """  
-                        timeout 60 bash -c 'until curl -f http://localhost:8080/actuator/health 2>/dev/null; do   
+                        timeout 120 bash -c 'until curl -f http://localhost:8080/actuator/health 2>/dev/null; do  
                             echo "En attente du backend..."  
-                            sleep 5  
+                            sleep 10  
                         done'  
                     """  
                       
-                    // Vérifier le frontend  
                     sh """  
-                        timeout 60 bash -c 'until curl -f http://localhost:3000 2>/dev/null; do   
+                        timeout 120 bash -c 'until curl -f http://localhost:3000 2>/dev/null; do  
                             echo "En attente du frontend..."  
-                            sleep 5  
+                            sleep 10  
                         done'  
                     """  
                       
@@ -172,11 +178,9 @@ pipeline {
                 echo "Nettoyage post-build..."  
                 sh 'docker logout || true'  
                   
-                // Archiver les logs  
-                sh 'docker-compose logs > docker-compose.log || true'  
+                sh 'docker compose -f docker-compose.prod.yml logs > docker-compose.log || true'  
                 archiveArtifacts artifacts: 'docker-compose.log', allowEmptyArchive: true  
                   
-                // Nettoyer les images de build  
                 sh 'docker image prune -f || true'  
             }  
         }  
@@ -187,7 +191,7 @@ pipeline {
           
         failure {  
             echo "❌ Pipeline échouée. Vérifiez les logs."  
-            sh 'docker-compose logs'  
+            sh 'docker compose -f docker-compose.prod.yml logs || true'  
         }  
           
         unstable {  
