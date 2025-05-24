@@ -15,7 +15,7 @@ pipeline {
     stages {  
         stage('Checkout') {  
             steps {  
-                deleteDir()
+                deleteDir() // Nettoie complètement le workspace à chaque build  
                 checkout scm  
                 echo "Code récupéré depuis le repository"  
             }  
@@ -38,7 +38,7 @@ pipeline {
                     sh '''  
                         echo "Attente de PostgreSQL..."  
                         timeout 120 bash -c 'until docker compose exec -T postgres pg_isready -U postgres; do  
-                            echo "PostgreSQL n\'est pas encore prêt - attente..."  
+                            echo "PostgreSQL n\\'est pas encore prêt - attente..."  
                             sleep 5  
                         done'  
                     '''  
