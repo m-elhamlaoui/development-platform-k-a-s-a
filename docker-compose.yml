@@ -5,9 +5,10 @@ services:
   frontend:
     build:
       context: ./frontend
+      dockerfile: Dockerfile.dev
     ports:
-      - "3000:80"
-    command: npm run dev -- --host
+      - "3000:5173"
+    # command: npm run dev -- --host
     volumes:
       - ./frontend:/app
       - /app/node_modules

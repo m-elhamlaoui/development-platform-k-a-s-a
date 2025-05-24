@@ -86,10 +86,9 @@ pipeline {
             steps {  
                 script {  
                     echo "Scan de sécurité des images..."  
-                    // Optionnel : scan de vulnérabilités  
                     sh """  
-                        docker run --rm -v /var/run/docker.sock:/var/run/docker.sock \  
-                        aquasec/trivy:latest image --exit-code 0 --severity HIGH,CRITICAL \  
+                        docker run --rm -v /var/run/docker.sock:/var/run/docker.sock \\  
+                        aquasec/trivy:latest image --exit-code 0 --severity HIGH,CRITICAL \\  
                         ${DOCKER_HUB_REPO}-backend:${BUILD_NUMBER} || true  
                     """  
                 }  
@@ -184,13 +183,11 @@ pipeline {
           
         success {  
             echo "🎉 Pipeline réussie ! AstroMap déployé avec succès."  
-            // Optionnel : notification Slack/email  
         }  
           
         failure {  
             echo "❌ Pipeline échouée. Vérifiez les logs."  
             sh 'docker-compose logs'  
-            // Optionnel : notification d'échec  
         }  
           
         unstable {  

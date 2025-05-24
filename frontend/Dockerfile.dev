@@ -1,0 +1,19 @@
+FROM node:18  
+  
+WORKDIR /app  
+  
+COPY package.json package-lock.json ./  
+RUN npm install --legacy-peer-deps  
+  
+# Installations supplémentaires  
+RUN npm install --save-dev @types/react @types/react-dom @types/three  
+RUN npm install @react-oauth/google@latest  
+RUN npm install styled-components  
+RUN npm install react-router-hash-link  
+RUN npm install framer-motion  
+  
+COPY . .  
+  
+EXPOSE 5173  
+  
+CMD ["npm", "run", "dev", "--", "--host"]
