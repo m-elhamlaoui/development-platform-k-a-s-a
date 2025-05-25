@@ -49,20 +49,11 @@ pipeline {
       steps {
         script {
           try {
-            // Remplacer le chemin relatif par le chemin absolu correct
-            sh '''
-              cp docker-compose.yml docker-compose.test.yml
-              sed -i "s|\\./backend:/app|/var/jenkins_home/workspace/AstroMap-Pipeline/backend:/app|g" docker-compose.test.yml
-
-              echo "📁 Contenu du dossier backend dans Jenkins :"
-              ls -l /var/jenkins_home/workspace/AstroMap-Pipeline/backend
-
-              echo "🚀 Lancement des tests Maven avec affichage du contenu dans le conteneur..."
-              docker compose -f docker-compose.test.yml run --rm backend-tests sh -c "ls -l && mvn test"
-            '''
+            echo "🚀 Build et exécution des tests dans une image dédiée"
+            sh 'docker compose run --rm backend-tests'
           } catch (Exception e) {
-            sh 'docker compose -f docker-compose.test.yml logs backend-tests || true'
-            sh 'docker compose -f docker-compose.test.yml logs postgres || true'
+            sh 'docker compose logs backend-tests || true'
+            sh 'docker compose logs postgres || true'
             throw e
           }
         }
