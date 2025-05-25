@@ -15,7 +15,7 @@ pipeline {
     stages {  
         stage('Checkout') {  
             steps {  
-                deleteDir()  
+                deleteDir() // Nettoie complètement le workspace à chaque build  
                 checkout scm  
             }  
         }  
@@ -34,6 +34,7 @@ pipeline {
                 script {  
                     sh 'docker compose up -d postgres'  
                       
+                    // Attente robuste de PostgreSQL avec pg_isready  
                     sh '''  
                         timeout 120 bash -c 'until docker compose exec -T postgres pg_isready -U postgres; do  
                             sleep 5  
@@ -49,11 +50,9 @@ pipeline {
             steps {  
                 script {  
                     try {  
+                        // Attente que PostgreSQL soit en bonne santé (healthcheck Docker Compose)  
                         sh '''  
-                            timeout 120 bash -c "until docker compose exec -T postgres pg_isready -U postgres; do sleep 5; done"  
-                        '''  
-                        sh '''  
-                            timeout 180 bash -c 'until [ "$(docker compose ps postgres --format json | jq -r ".[0].Health")" = "healthy" ]; do  
+                            timeout 180 bash -c 'until docker compose ps postgres --format json | jq -e ".[0].Health == \\"healthy\\"" > /dev/null; do  
                                 sleep 10  
                             done'  
                         '''  
