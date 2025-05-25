@@ -16,7 +16,18 @@ pipeline {
     stage('Checkout') {
       steps {
         deleteDir()
-        checkout scm
+        checkout([
+          $class: 'GitSCM',
+          branches: [[name: '*/main']], // Remplace 'main' par ta branche si besoin
+          userRemoteConfigs: [[url: 'https://github.com/m-elahmlaoui/development-platform-k-a-s-a']],
+          extensions: [[
+            $class: 'CloneOption',
+            shallow: true,
+            depth: 1,
+            noTags: false,
+            timeout: 10
+          ]]
+        ])
       }
     }
 
@@ -49,7 +60,7 @@ pipeline {
       steps {
         script {
           try {
-            echo "🚀 Build et exécution des tests dans une image dédiée"
+            echo "\uD83D\uDE80 Build et exécution des tests dans une image dédiée"
             sh 'docker compose run --rm backend-tests'
           } catch (Exception e) {
             sh 'docker compose logs backend-tests || true'
@@ -138,17 +149,17 @@ pipeline {
     stage('Health Check') {
       steps {
         script {
-          sh """
+          sh '''
             timeout 120 bash -c 'until curl -f http://localhost:8080/actuator/health 2>/dev/null; do
               sleep 10
             done'
-          """
+          '''
 
-          sh """
+          sh '''
             timeout 120 bash -c 'until curl -f http://localhost:3000 2>/dev/null; do
               sleep 10
             done'
-          """
+          '''
         }
       }
     }
@@ -165,7 +176,7 @@ pipeline {
     }
 
     success {
-      echo "🎉 Pipeline réussie ! AstroMap déployé avec succès."
+      echo "\uD83C\uDF89 Pipeline réussie ! AstroMap déployé avec succès."
     }
 
     failure {
