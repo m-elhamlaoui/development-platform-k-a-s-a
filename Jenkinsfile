@@ -50,11 +50,15 @@ pipeline {
       steps {
         script {
           try {
-            // Exécuter les tests backend dans un conteneur dédié
-            sh 'docker compose run --rm backend-tests'
+            // Génère une copie temporaire du compose avec chemin absolu
+            sh '''
+              cp docker-compose.yml docker-compose.test.yml
+              sed -i "s|\\./backend:/app|$WORKSPACE/backend:/app|g" docker-compose.test.yml
+              docker compose -f docker-compose.test.yml run --rm backend-tests
+            '''
           } catch (Exception e) {
-            sh 'docker compose logs backend-tests || true'
-            sh 'docker compose logs postgres || true'
+            sh 'docker compose -f docker-compose.test.yml logs backend-tests || true'
+            sh 'docker compose -f docker-compose.test.yml logs postgres || true'
             throw e
           }
         }
