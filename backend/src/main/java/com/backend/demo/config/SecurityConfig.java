@@ -39,7 +39,8 @@ public class SecurityConfig {
                 .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                 .requestMatchers("/api/auth/**").permitAll()
                 .requestMatchers("/api/utilisateurs/**").permitAll()
-                .requestMatchers("/actuator/health").permitAll()  // ✅ Autoriser health sans auth
+                .requestMatchers("/actuator/**").permitAll()
+
                 .anyRequest().authenticated()
             )
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
