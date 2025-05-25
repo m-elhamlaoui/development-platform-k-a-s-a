@@ -1,0 +1,60 @@
+
+/* Apply Syncopate font to all buttons */
+button {
+    font-family: 'Syncopate', sans-serif;
+  }
+  
+
+  
+  
+  
+  .white-text {
+    color: white; /* Set the color to white */
+  }
+  
+
+  
+  html, body, #root {
+    height: 100%;  /* La hauteur de toute la page */
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;  /* Disposition des sections en colonne */
+    overflow: hidden;  /* Empêche le scroll global de la page */
+  }
+  
+  .home {
+    display: flex;
+    flex-direction: column;  /* Empile les sections en colonne */
+    min-height: 100vh;  /* Chaque section prend toute la hauteur de l'écran */
+    overflow-y: auto;  /* Permet le scroll vertical */
+    
+  }
+  
+  
+  .footer {
+    width: 100%;  /* Chaque section prend toute la hauteur de l'écran */
+     /* Aligne chaque section au début lors du défilement */
+  }
+  
+  
+  .hero-section {
+    width: 100%;  /* La largeur de chaque section est 100% */
+    height: 100vh;  /* Chaque section prend toute la hauteur de l'écran */
+      /* Aligne chaque section au début lors du défilement */
+  }
+
+  .header{
+    width: 100%;  /* Aligne chaque section au début lors du défilement */
+  }
+  
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  /* La vidéo reste derrière tout le contenu */
+    object-fit: cover;  /* Couvre toute la fenêtre sans distorsion */
+  }
