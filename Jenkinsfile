@@ -34,7 +34,6 @@ pipeline {
         script {
           sh 'docker compose up -d postgres'
 
-          // Attente de PostgreSQL prêt via pg_isready
           sh '''
             timeout 120 bash -c "until docker compose exec -T postgres pg_isready -U postgres; do
               sleep 5
@@ -50,11 +49,22 @@ pipeline {
       steps {
         script {
           try {
-            // Génère une copie temporaire du compose avec chemin absolu
+            // Préparation du fichier docker-compose modifié avec chemin absolu
             sh '''
               cp docker-compose.yml docker-compose.test.yml
-              sed -i "s|\\./backend:/app|$WORKSPACE/backend:/app|g" docker-compose.test.yml
-              docker compose -f docker-compose.test.yml run --rm backend-tests
+              sed -i "s|\\./backend:/app|${WORKSPACE}/backend:/app|g" docker-compose.test.yml
+            '''
+
+            // Affichage du contenu du dossier monté pour vérification
+            sh '''
+              echo "📁 Contenu du dossier backend dans Jenkins :"
+              ls -l $WORKSPACE/backend
+            '''
+
+            // Lancement des tests avec affichage du contenu du conteneur pour debug
+            sh '''
+              echo "🚀 Lancement des tests Maven avec affichage du contenu dans le conteneur..."
+              docker compose -f docker-compose.test.yml run --rm backend-tests sh -c "ls -l && mvn test"
             '''
           } catch (Exception e) {
             sh 'docker compose -f docker-compose.test.yml logs backend-tests || true'
