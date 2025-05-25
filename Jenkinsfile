@@ -20,7 +20,7 @@ pipeline {
           $class: 'GitSCM',
           branches: [[name: '*/devops']],
           userRemoteConfigs: [[
-            url: 'https://github.com/m-elahmlaoui/development-platform-k-a-s-a',
+            url: 'https://github.com/m-elhamlaoui/development-platform-k-a-s-a',
             credentialsId: 'github-credentials'
           ]],
           extensions: [[
