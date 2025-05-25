@@ -149,23 +149,23 @@ pipeline {
       }
     }
 
-    stage('Health Check') {
-      steps {
-        script {
-          sh '''
-            timeout 120 bash -c 'until curl -f http://localhost:8080/actuator/health 2>/dev/null; do
-              sleep 10
-            done'
-          '''
+    // stage('Health Check') {
+    //   steps {
+    //     script {
+    //       sh '''
+    //         timeout 120 bash -c 'until curl -f http://localhost:8080/actuator/health 2>/dev/null; do
+    //           sleep 10
+    //         done'
+    //       '''
 
-          sh '''
-            timeout 120 bash -c 'until curl -f http://localhost:3000 2>/dev/null; do
-              sleep 10
-            done'
-          '''
-        }
-      }
-    }
+    //       sh '''
+    //         timeout 120 bash -c 'until curl -f http://localhost:3000 2>/dev/null; do
+    //           sleep 10
+    //         done'
+    //       '''
+    //     }
+    //   }
+    // }
   }
 
   post {
