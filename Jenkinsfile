@@ -49,20 +49,14 @@ pipeline {
       steps {
         script {
           try {
-            // Préparation du fichier docker-compose modifié avec chemin absolu
+            // Remplacer le chemin relatif par le chemin absolu correct
             sh '''
               cp docker-compose.yml docker-compose.test.yml
-              sed -i "s|\\./backend:/app|${WORKSPACE}/backend:/app|g" docker-compose.test.yml
-            '''
+              sed -i "s|\\./backend:/app|/var/jenkins_home/workspace/AstroMap-Pipeline/backend:/app|g" docker-compose.test.yml
 
-            // Affichage du contenu du dossier monté pour vérification
-            sh '''
               echo "📁 Contenu du dossier backend dans Jenkins :"
-              ls -l $WORKSPACE/backend
-            '''
+              ls -l /var/jenkins_home/workspace/AstroMap-Pipeline/backend
 
-            // Lancement des tests avec affichage du contenu du conteneur pour debug
-            sh '''
               echo "🚀 Lancement des tests Maven avec affichage du contenu dans le conteneur..."
               docker compose -f docker-compose.test.yml run --rm backend-tests sh -c "ls -l && mvn test"
             '''
