@@ -18,8 +18,11 @@ pipeline {
         deleteDir()
         checkout([
           $class: 'GitSCM',
-          branches: [[name: '*/main']], // Remplace 'main' par ta branche si besoin
-          userRemoteConfigs: [[url: 'https://github.com/m-elahmlaoui/development-platform-k-a-s-a']],
+          branches: [[name: '*/devops']],
+          userRemoteConfigs: [[
+            url: 'https://github.com/m-elahmlaoui/development-platform-k-a-s-a',
+            credentialsId: 'github-credentials'
+          ]],
           extensions: [[
             $class: 'CloneOption',
             shallow: true,
@@ -60,7 +63,7 @@ pipeline {
       steps {
         script {
           try {
-            echo "\uD83D\uDE80 Build et exécution des tests dans une image dédiée"
+            echo "🚀 Build et exécution des tests dans une image dédiée"
             sh 'docker compose run --rm backend-tests'
           } catch (Exception e) {
             sh 'docker compose logs backend-tests || true'
@@ -176,7 +179,7 @@ pipeline {
     }
 
     success {
-      echo "\uD83C\uDF89 Pipeline réussie ! AstroMap déployé avec succès."
+      echo "🎉 Pipeline réussie ! AstroMap déployé avec succès."
     }
 
     failure {
